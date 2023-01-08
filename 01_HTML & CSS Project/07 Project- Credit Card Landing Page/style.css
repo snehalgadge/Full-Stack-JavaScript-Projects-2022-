@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero-section */
+.hero-section{
+    height: 100%;
+    background: #000;
+}
+
+/* navbar */
+.hero-section .navbar{
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.list{
+   width: 30%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: #fff; 
+}
+
+.list-items{
+    list-style: none;
+}
+
+.list-items:hover{
+    cursor: pointer;    
+    color: rgb(214, 69, 178);
+}
+
+/* side */
+.side{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.side .image{
+    position: absolute;
+    top: 4.79%;
+    left: 81%;
+}
+
+/* Main-hero-section */
+.main-hero-section{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 12%;
+}
+
+.main h1{
+    position: absolute;
+    top: 10;
+    left: 12%;
+    font-size: 70px;
+    margin-top: 3%;
+    padding-right: 35%;
+    line-height: 115%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:normal;
+}
+
+.main .one-card{
+    color:  rgb(185, 41, 149);
+}
+
+.main p{
+    position: absolute;
+    top: 45%;
+    left: 12%;
+    font-size: 20px;
+    padding-right: 50%;
+    line-height: 120%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-btn :nth-child(1){
+    position: absolute;
+    bottom: -4%;
+    left: -27%;
+    z-index: 0;
+}
+
+.main .hero-btn{
+    position: absolute;
+    top: 65%;
+    left: 13.55%; 
+    font-size: 20px;
+}
+
+.hero-btn:hover{
+    cursor: pointer;
+    color: #f637ec;
+}
+.hero-btn :nth-child(2){
+    position:absolute;
+    bottom: 22%;
+    left: 112%;
+}
+
+.hero-bottom{
+    display: flex;
+}
+
+.hero-bottom :nth-child(1){
+    position: absolute;
+    bottom: 10%;
+    left:10%
+}
+
+.first-4{
+    display: flex;
+    flex-direction: row;
+    margin-right: 59%;
+    margin-top: 35%;
+    padding-bottom: 2%;
+}
+
+.plus{
+    color: #f637ec;
+    font-weight:500;
+}
+
+.first-4 > .k1{
+    font-size: 40px;
+    /* font-weight: bolder; */
+    font-weight: 500;
+}
+.first-4 > .happy{
+    margin-left: 15px;
+    font-size: 20px;
+    width: 130px;
+}
+.first-4 > .vline{
+    position: relative;
+    top: -10px;
+    left: 60px;
+}
+.first-4 > .k2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 120px;
+}
+.first-4 > .yexp{
+    margin-left: 15px;
+    font-size: 20px;
+    width: 130px;
+}
+
+.hero-background >img{
+    width: 50%;
+}
+.hero-background :nth-child(1){
+    position: absolute;
+    bottom: 14%;
+    left: 32%;
+}
+.hero-background :nth-child(2){
+    position: absolute;
+    bottom: 8%;
+    left: 49%;
+}
+
+
