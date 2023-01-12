@@ -133,7 +133,7 @@
     flex-direction: row;
     margin-right: 59%;
     margin-top: 35%;
-    padding-bottom: 2%;
+    padding-bottom: 4%;
 }
 
 .plus{
@@ -180,5 +180,241 @@
     bottom: 8%;
     left: 49%;
 }
+
+
+
+/* logo-section */
+.logo-section{
+    height: 30%;
+    background: rgb(43, 42, 42);
+}
+
+.logo img{
+    width: 8%;
+    margin: 0 4%;
+}
+.logo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 3%;
+}
+
+
+
+/* service */
+.service{
+    height: 100%;
+    background: #000;
+}
+
+.payment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(227, 219, 219);
+    padding-top: 8%;
+}
+
+.payment h1{
+    margin-left:10%;
+    padding-right: 0%;
+    font-size: 68px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.payment h1>span{
+    color: #f637ec
+}
+
+.payment p{
+    margin-right: 8%;
+    font-size: 18px;
+    padding-left: 6%;
+    padding-right: 10%;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+}
+
+.cards{
+    margin-top: 11%;
+    padding-bottom: 8%;
+}
+
+.dollar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+    padding: 1.5% 0;
+    background: rgb(47, 47, 47);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom, #fff,gray,#000);
+    border-image-slice: 1;
+    padding: 3%;
+    position: relative;
+    top: 10%;
+    left: 20%;
+
+}
+
+.dollar img{
+    width: 50%;
+    margin-bottom: 15%;
+}
+
+.dollar p{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+.cloud{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+    padding: 1.5% 0;
+    background: rgb(102, 102, 102);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom, #fff,gray,#000);
+    border-image-slice: 1;
+    padding: 3%;
+    position: absolute;
+    bottom: -120%;
+    left: 40%;
+}  
+
+.cloud img{
+    width: 50%;
+    margin-bottom: 15%;
+}
+
+.cloud p{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.lock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+    padding: 1.5% 0;
+    background: rgb(47, 47, 47);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom, #fff,gray,#000);
+    border-image-slice: 1;
+    padding: 3%;
+    position: absolute;
+    top: 193%;
+    left: 60%;
+}
+
+.lock img{
+    width: 50%;
+    margin-bottom: 15%;
+}
+
+.lock p{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+
+/* unique card choices */
+.card-choices{
+    height: 100%;
+}
+
+.card-choices .card-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 8%;
+}
+
+.card-heading h1{
+    font-size: 100px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card-heading :nth-child(2){
+    color: #f637ec;
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    padding: 0 20%;
+}
+
+.card-choices .para p{
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(98, 98, 98);
+    text-align: center;
+}
+
+.card-choices .img{
+    position: absolute;
+    top: 300%;
+    left: 12%;
+    
+}
+
+
+/* feedback-section */
+.feedback-section{
+    height: 100%;
+    background: #000;
+    margin-top: 60%;
+}
+
+.feedback-section .feedback-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 8%;
+    color: #fff;
+}
+
+.feedback-heading h1{
+    font-size: 88px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.feedback-heading h1>span{
+    color: #f637ec;
+}
+.feedback-section .para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    padding: 0 29%;
+}
+
+.feedback-section .para>p{
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    color:  rgb(98, 98, 98);
+    text-align: center;
+}
+
+
+
+
+
+
+
 
 
