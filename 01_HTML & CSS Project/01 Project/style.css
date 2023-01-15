@@ -1,0 +1,105 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+*{
+    margin: 10px 0 0 30px;
+    box-sizing: border-box;
+}
+
+/* <---- Navigation bar ----> */
+
+.navbar-container{
+    display: flex;
+    justify-content: start;
+}
+.navbar-container>div>img{
+   margin-right: 0;
+}
+
+.navbar-container .list{
+    display: flex;
+}
+
+.navbar-container .list-item{
+    margin: 10px 20px 0 20px;
+
+        
+}
+.navbar-container .list-item{
+    list-style: none;
+}
+.navbar-container .list-item:first-child{
+    margin: 10px 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+.navbar-container .list-item:hover{
+   cursor: pointer;
+   color: #36519c;
+}
+
+.button-group .nav-button{
+    margin: 10px 0px 0 300px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: bold;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #575abc;
+    color: #e5f1f1;
+}
+
+.button-group .nav-button:hover{
+   cursor: pointer;
+   color: rgb(244, 250, 255);
+   background-color: #596b9b;
+}
+
+
+/* <---- Banner ----> */
+
+.banner-container{
+    display: flex;
+}
+
+.banner-container .heading-text{
+    margin-top: 60px;
+    width: 25vw;
+    font-size: 70px;
+    color: #21042a;
+
+}
+.banner-container .heading-text span{
+    margin-left: 0;
+    color: #723f82;
+}
+
+.banner-container .description{
+    width: 25vw;
+    font-size: 130%;
+    color: #8796c0;
+}
+.banner-container .nav-button{
+    margin-top: 80px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: bold;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #4b4fbb;
+    color: #e4ecec;
+}
+.banner-container .nav-button:hover{
+   cursor: pointer;
+   color: rgb(244, 250, 255);
+   background-color: #596b9b;
+}
+.banner-container div img{
+    width:80%;
+    height:100%;
+}
+
+
+
