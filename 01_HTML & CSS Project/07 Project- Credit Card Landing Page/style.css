@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0 0.90%;
     padding: 0;
     box-sizing: border-box;
 }
@@ -47,7 +47,7 @@
 .side .image{
     position: absolute;
     top: 4.79%;
-    left: 81%;
+    left: 77.90%;
 }
 
 /* Main-hero-section */
@@ -96,7 +96,7 @@
 
 .hero-btn :nth-child(1){
     position: absolute;
-    bottom: -4%;
+    bottom: 4%;
     left: -27%;
     z-index: 0;
 }
@@ -133,7 +133,7 @@
     flex-direction: row;
     margin-right: 59%;
     margin-top: 35%;
-    padding-bottom: 4%;
+    padding-bottom: 5%;
 }
 
 .plus{
@@ -173,12 +173,12 @@
 .hero-background :nth-child(1){
     position: absolute;
     bottom: 14%;
-    left: 32%;
+    left: 37%;
 }
 .hero-background :nth-child(2){
     position: absolute;
     bottom: 8%;
-    left: 49%;
+    left: 56%;
 }
 
 
@@ -186,6 +186,7 @@
 /* logo-section */
 .logo-section{
     height: 30%;
+    padding: 1% 4%;
     background: rgb(43, 42, 42);
 }
 
@@ -376,6 +377,7 @@
     height: 100%;
     background: #000;
     margin-top: 60%;
+    padding-bottom: 55%;
 }
 
 .feedback-section .feedback-heading{
@@ -383,13 +385,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 8%;
+    padding: 8% 5% 0 5%;
     color: #fff;
+    
+    
 }
 
 .feedback-heading h1{
-    font-size: 88px;
+    font-size: 85px;
     font-family: 'Ubuntu', sans-serif;
+    text-align: center;
 }
 
 .feedback-heading h1>span{
@@ -409,12 +414,169 @@
     color:  rgb(98, 98, 98);
     text-align: center;
 }
+/* review */
+.review{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10%;
+    margin-left: 20%;
+    /* justify-content: center; */
+    row-gap: 15%;
+}
+
+.review-1{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 58%;
+    padding: 0 3%;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom, rgb(255, 255, 255),rgb(122, 122, 122));
+    border-image-slice: 1;
+    background-image: linear-gradient(rgb(51, 48, 48),rgb(136, 135, 135));
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.review-1>img{
+    width:45%;
+}
+
+.review-1>p{
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
 
 
+.review-2{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 58%;
+    padding: 0 3%;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom, rgb(255, 255, 255),rgb(122, 122, 122),#000);
+    border-image-slice: 1;
+    background-color: rgb(51, 48, 48);
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.review-2>img{
+    width:45%;
+}
+
+.review-2>p{
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.bullets{
+    padding-top: 10%;
+    padding-left: 43%;
+    /* margin-bottom: 5%; */
+}
+
+.bullets :nth-child(1){
+    height: 20px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #f637ec;
+    display: inline-block;
+    margin: 10px;
+    box-shadow:0 0 2px 1px #ef55e7, 0 0 30px 2px #fc61f5;
+
+}
+
+.dot1:hover{
+    cursor:pointer;
+    box-shadow:0 0 1px 1px #fff,0 0 10px 6px #ef55e7, 0 0 14px 9px #f336ea;
+}
+
+.bullets .dot{
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.dot:hover{
+    cursor:pointer;
+    box-shadow:0 0 1px 1px #fff,0 0 10px 6px #ef55e7, 0 0 14px 9px #f336ea;
+}
 
 
+/* last-section */
+.last-section{
+    height: 100%;
+    background: #000;
+}
+
+.last-section .img-left{
+    position: absolute;
+    top: 620%;
+    left: 0.90%;
+}
+
+.last-section .img-right{
+    position: absolute;
+    top: 620%;
+    left: 0.90%;
+}
+
+.last-section .diamond-right{
+    position: absolute;
+    top: 618%;
+    left: 1%;
+}
+
+.last-section .diamond-left{
+    position: absolute;
+    top: 625.25%;
+    left: 59.5%;
+}
+
+.last-section h1{
+    position: absolute;
+    top: 615%;
+    font-size: 82px;
+    text-align: center;
+    padding : 12% 12%;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.last-section h1>span{
+    color: #000;
+}
+
+.last-section .hero-btn{
+    position: absolute;
+    top: 672%;
+    left: 46%; 
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: medium;
+    color: #fff;
+}
 
 
+/* footer */
+.footer{
+    display: flex;
+    align-items: center;
+    height: 30%;
+    background: #000;
+    padding: 5%;
+}
 
+.footer .footer-img{
+    padding-left: 15%;
+}
 
-
+.footer .list{
+    margin-left: 25%;
+}
