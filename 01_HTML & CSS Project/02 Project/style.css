@@ -1,0 +1,105 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* <---- Navigation Bar ----> */
+.container .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    background-color: #000;
+}
+
+.navbar>div img{
+    width: 60%;
+    margin-right: 0;
+}
+.navbar .line{
+    width: 0.1%;
+    background-color: white;
+    height: 50px;
+}
+.grow-list .list {
+    width: 80%;
+    display: flex;
+    color: #ffff;
+    align-items: center;
+}
+.grow-list .list .list-item{
+    list-style-type: none;
+    margin: 27px 30px;
+}
+
+.navbar div:nth-child(4){
+    margin-left: 30%;
+}
+
+.grow-list .list .list-item:hover{
+    cursor: pointer;
+    color: #b9a4c3;
+}
+
+.navbar div .button-small{
+    padding: 12px 30px;
+    border-radius: 12px;
+    background-color: #8D3DAF;
+    color: #ffff;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.navbar div .button-small:hover{
+    cursor: pointer;
+    background-color: #d7c2df;
+    color: #7d0cad;
+}
+
+
+/* <---- Hero-section ----> */
+
+.hero{
+    height:100vh;
+    text-align: center;
+    font-family: sans-serif;
+    background-image: url(./assets/bg.png);
+}
+
+.hero .hero-heading{
+   width: 100vw;
+   font-size: 105px;
+   font-family:sans-serif; 
+   padding: 150px 228px 5px 228px;
+   color: #ffff;
+}
+
+.hero .hero-description{
+    padding: 0 25px;
+    font-size: 33px;
+    color: #ffff;
+}
+
+.hero .button-large{
+    margin-top: 60px;
+    padding: 20px 75px;
+    background-color: #8D3DAF;
+    color: #ffff;
+    border-style: none;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.hero .button-large:hover{
+    cursor: pointer;
+    background-color: #d7c2df;
+    color: #7d0cad;
+}
+
+
+
