@@ -288,19 +288,19 @@
     justify-content:space-between;
     border-radius:30px ;
     padding: 25px;
-    width: 25%;
+    width: 26%;
 }
 .btn-1{
     background-color: lightgray;
     color: black;
     border-radius: 40px;
     width: 650px;
-    height: 80px;
+    height: 86px;
     font-weight: 500;
     font-size: 30px;
     padding-left: 35px;
     padding-right: 31px;
-    padding-top: 18px;
+    padding-top: 24px;
     margin-top: 20px;
     margin-bottom: 10px;
     display: flex;
@@ -316,7 +316,7 @@
     background-color: #292828;
     border-radius: 40px;
     height: 58px;
-    width: 344px;
+    width: 356px;
     text-align: left;
     color: white;
     font-weight: 500;
