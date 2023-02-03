@@ -1,0 +1,34 @@
+/* making the body block to remove flex property from other sheet */
+body{
+    display: block;
+    overflow-y: scroll;
+}
+
+/* main wrapper for the accordian */
+.accordian-wrapper{
+    border: 5px solid white;
+    width: 70vw;
+    margin: 50px auto;
+}
+
+.accordian{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid white;
+    
+}
+
+.accordian h3{
+    padding: 5px 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.accordian p{
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    display: none;
+}

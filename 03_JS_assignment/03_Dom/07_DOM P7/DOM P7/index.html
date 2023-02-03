@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" async defer></script>
+    <title>Dom Assignment 5</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <img
+          src="https://ineuron.ai/images/ineuron-logo.png"
+          alt="iNeuron logo"
+          class="nav__logo-img"
+        />
+
+        <div class="nav__menu">
+          <ul class="nav__items">
+            <li class="nav__item">Home</li>
+            <li class="nav__item">About</li>
+            <li class="nav__item">Contact</li>
+          </ul>
+        </div>
+
+        <div>
+          <button class="nav__btn">Sign In</button>
+          <button class="nav__btn nav__btn-main">Sign Up</button>
+        </div>
+      </nav>
+
+      <section class="main">
+        <div class="main__languages">
+          <span class="main__languages-text">
+            Assignment - 1: Remove the languages that have 2.0 in their
+            name(Every alternative language)
+          </span>
+          <br />
+          Courses offered:
+          <a target="_blank" href="https://www.ineuron.ai">JavaScript</a>
+          <a target="_blank" href="https://www.ineuron.ai">JavaScript 2.0</a>
+          <a target="_blank" href="https://www.ineuron.ai">React</a>
+          <a target="_blank" href="https://www.ineuron.ai">React 2.0</a>
+          <a target="_blank" href="https://www.ineuron.ai">Node</a>
+          <a target="_blank" href="https://www.ineuron.ai">Node 2.0</a>
+          <a target="_blank" href="https://www.ineuron.ai">HTML & CSS</a>
+          <a target="_blank" href="https://www.ineuron.ai">HTML & CSS 2.0</a>
+          <a target="_blank" href="https://www.ineuron.ai">MERN</a>
+          <a target="_blank" href="https://www.ineuron.ai">MERN 2.0</a>
+        </div>
+
+        <div class="main__form">
+          <span class="main__languages-text"
+            >Assignment - 2: Use JavaScript to write something in the input box
+            and submit the form. This should refresh the page and the languages
+            in the left card should come back.</span
+          >
+          <form>
+            <input
+              class="main__form-input"
+              type="text"
+              placeholder="Enter some text using JavaScript"
+              disabled
+            />
+            <button class="main__form-btn" type="submit" disabled>
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

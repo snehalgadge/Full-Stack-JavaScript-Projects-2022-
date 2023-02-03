@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+
+    <!-- font awesome kit link -->
+    <script
+      src="https://kit.fontawesome.com/6ebb309f55.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- poppin font from the google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- adding the css file to html document -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./contact.css">
+  </head>
+  <body>
+    <!-- Header Portion -->
+    <header>
+      <!-- Creating the Navigation Menu -->
+      <nav>
+        <!-- Logo Area -->
+        <div class="logo">LOGO</div>
+
+        <!-- Navigation Links -->
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Search Area -->
+        <div class="search-field">
+          <input type="text" placeholder="Search" />
+          <button>Search</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- creating the main content area -->
+    <main class="mainWrapper">
+      <!-- left div for showing the submitted response -->
+      <div class="mainLeft">
+        <h2>User Output Board</h2>
+        <form class="mainLeftDetails">
+          <input class="enterName" type="text" readonly placeholder="User Entered Name">
+          <input class="enterMail" type="email" readonly placeholder="User Entered Email">
+          <textarea class="enterMessage" readonly placeholder="User Entered Message"></textarea>
+          <button type="reset">Reset</button>
+        </form>
+      </div>
+      
+      <!-- right div for accpeting the user input through the form -->
+      <div class="mainRight">
+        <h2>User Input Board</h2>
+        <form>
+          <input class="userName" type="text" placeholder="Enter Your Name" required>
+          <input class="userEmail" type="email" placeholder="Enter Your Email" required>
+          <textarea class="userMessage" placeholder="Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

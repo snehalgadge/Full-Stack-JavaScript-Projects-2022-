@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.img img {
+  max-width: 100%;
+  display: inherit;
+}
+
+.caption {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  font-size: 2.8em;
+  line-height: 1em;
+  color: hsl(212, 21%, 14%);
+}
+
+.description {
+  line-height: 150%;
+  color: hsl(228, 12%, 48%);
+}
+
+.price-tag {
+  display: flex;
+  align-items: center;
+}
+
+.current-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  font-size: 2.5em;
+}
+
+.old-price {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  margin-left: 20px;
+}
+
+.add-to-cart {
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  padding: 12px 0;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.add-to-cart:hover {
+  background-color: hsl(157, 37%, 20%);
+}
+
+button img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+@media (max-width: 630px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .img img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  .category,
+  .title,
+  .description,
+  .price-tag,
+  .add-to-cart {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    margin: 15px auto;
+    padding: 0 15px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .img img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  .category,
+  .title,
+  .description,
+  .price-tag,
+  .add-to-cart {
+    padding-bottom: 15px;
+  }
+}
