@@ -9,5 +9,5 @@ My Hashnode -[Hashnode- Snehal Gadge](https://hashnode.com/@snehal22 "Hashnode")
 ## Projects
 # HTML/CSS Projects
 <br>
--Project - [SEO Master]()
+-Project - [SEO Master](https://github.com/snehalgadge/FSJS-2.0/tree/main/01_HTML%20%26%20CSS%20Project/01%20Project)
 
