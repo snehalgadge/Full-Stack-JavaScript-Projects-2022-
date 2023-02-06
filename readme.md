@@ -8,7 +8,7 @@ My Hashnode -[Hashnode- Snehal Gadge](https://hashnode.com/@snehal22 "Hashnode")
 
 ## Projects
 # HTML/CSS Projects
-<br>
+
 -[PROJECT 1](https://github.com/snehalgadge/FSJS-2.0/tree/main/01_HTML%20%26%20CSS%20Project/01%20Project)
 -[PROJECT 2](https://github.com/snehalgadge/FSJS-2.0/tree/main/01_HTML%20%26%20CSS%20Project/02%20Project)
 -[PROJECT 3](https://github.com/snehalgadge/FSJS-2.0/tree/main/01_HTML%20%26%20CSS%20Project/03%20Project)
@@ -23,5 +23,5 @@ My Hashnode -[Hashnode- Snehal Gadge](https://hashnode.com/@snehal22 "Hashnode")
 
 # JAVASCRIPT PROJECT
 -[BASIC QUESTIONS](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/01_QnA)
--[ON CLICK](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/02_onClick]
+-[ON CLICK](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/02_onClick)
 -[DOM ASSIGNMENT](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/03_Dom)
