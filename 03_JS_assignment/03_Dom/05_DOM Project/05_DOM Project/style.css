@@ -56,6 +56,14 @@ a{
     font-size: 25px;
 }
 
+.btn1{
+    background-color: blueviolet;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 3px;
+    margin: 5px;
+    font-size: 25px;
+}
 .hero-container{
     position: relative;
     text-align: center;
