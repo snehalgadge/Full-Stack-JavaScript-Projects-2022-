@@ -12,3 +12,4 @@ let onethird = document.querySelectorAll(".one-third div")
 onethird.forEach((element)=>{
     element.style.color = "#fff";
 })
+
