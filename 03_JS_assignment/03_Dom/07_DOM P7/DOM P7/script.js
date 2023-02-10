@@ -15,4 +15,25 @@ arrayLanguage.forEach((e) =>{
 let input = document.querySelector(".main__form-input");
 input.disabled = false;
 
+let button = document.querySelector(".main__form-btn");
+button.removeAttribute("disabled");
+
+button.addEventListener("click", (e) => {
+    e.preventDefault();
+    localStorage.setItem("inputValue", input.value);
+    location.reload();
+});
+
+
+window.addEventListener("load", () => {
+
+    const storedValue = localStorage.getItem("inputValue");
+    input.value = storedValue;
+    const mainLanguagesA = document.querySelector('.main__languages');
+    const a = document.createElement("a");
+    a.target = 'blank';
+    a.href = 'https://www.ineuron.ai';
+    a.innerText = storedValue;
+    mainLanguagesA.append(a);
+});
 
