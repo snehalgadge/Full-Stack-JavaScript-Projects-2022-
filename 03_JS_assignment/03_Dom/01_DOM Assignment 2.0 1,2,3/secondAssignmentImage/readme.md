@@ -4,7 +4,7 @@
 ### Task 1
 ![](./task1Output.png)
 
-<!-- i)Chaing background color of all h3 -->
+### i)Chaing background color of all h3
 ### Solution
 ```
 Array.from(accordian).forEach((element) => {
@@ -15,7 +15,7 @@ Array.from(accordian).forEach((element) => {
 ### Task 2
 ![](./task2Output.png)
 
-<!-- i)Adding new element -> Skills -->
+### i)Adding new element -> Skills
 ### Solution
 ```
 let wrp = document.querySelector(".accordian-wrapper");

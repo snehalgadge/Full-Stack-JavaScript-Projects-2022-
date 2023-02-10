@@ -19,8 +19,7 @@ arrayLanguage.forEach((e) =>{
 <!-- Task 2 -->
 ![](./ass7.2-after.png)
 
-<!-- ii)writing something in the input box and submit the form and
-This should refresh the page and the languages in the left card should come back. -->
+### ii)writing something in the input box and submit the form and this should refresh the page and the languages in the left card should come back.
 ```
 let input = document.querySelector(".main__form-input");
 input.disabled = false;

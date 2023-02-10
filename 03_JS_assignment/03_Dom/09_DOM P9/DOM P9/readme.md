@@ -1,4 +1,4 @@
-<!-- Task1: Changing the color of the title and adding "add to cart" icon -->
+### Task1: Changing the color of the title and adding "add to cart" icon
 ![](./ass9.1-after.png)
 ```
 let title = document.querySelector(".caption h1");
@@ -9,7 +9,7 @@ title.style.color = "#DC143C";
 addToCartImg.src = "./images/icon-cart.svg";
 ```
 
-<!-- Task2: Changing the color of the button on hover-->
+### Task2: Changing the color of the button on hover
 ![](./ass9.2-after.png)
 
 ```

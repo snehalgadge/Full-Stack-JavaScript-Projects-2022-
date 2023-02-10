@@ -3,7 +3,7 @@
 ### Task 1
 ![](./task1Output.png)
 
-<!-- i)Chainging the placeholder text -->
+### i)Chainging the placeholder text
 
 ### Soltuion
 ```

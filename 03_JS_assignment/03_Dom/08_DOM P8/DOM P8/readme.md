@@ -1,6 +1,7 @@
-<!-- Task 1 -->
+### Task 1
 ![](./ass8.1-after.png)
-<!--Making new Section scrollable-----*/ -->
+
+### Making new Section scrollable-----*/
 ```
 let new1 = document.querySelector(".new");
 
@@ -11,7 +12,7 @@ console.log(new1);
 ```
 
 
-<!-- Task2: Navbar toggler -->
+### Task2: Navbar toggler
 ![](./ass8.2-after.png)
 
 ```

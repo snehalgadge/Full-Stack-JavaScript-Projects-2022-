@@ -3,7 +3,7 @@
 ## Task 1
 ![](./04_DOM%20Project/Output/DOM%20P1%20SS.png)
 
-<!-- i)Changing the background color -->
+### i)Changing the background color
 
 ## Soltuion
 ``` 
@@ -15,7 +15,7 @@ for(let i=0; i<5; i++){
 }
 ```
 
-<!-- ii)Chaingin text color -->
+### ii)Chaingin text color
 ```
 let onethird = document.querySelectorAll(".one-third div")
 onethird.forEach((element)=>{
