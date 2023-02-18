@@ -5,6 +5,7 @@
 
 let data;
 
+const body = document.querySelector("body");
 const inputBox = document.getElementById("inputBox");
 const countryName = document.getElementById("countryName");
 const stateName = document.getElementById("stateName");
@@ -28,7 +29,7 @@ const getData = async (event) => {
   // Fetch Details
 
   const fetchData = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=1&q=${city}`
+    `http://api.weatherapi.com/v1/current.json?key=b39b119ab9714388b7c115829231602 &q=${city}`
   );
 
   const orgData = await fetchData.json();
@@ -44,4 +45,19 @@ const getData = async (event) => {
   temprature.innerHTML = data.current.temp_c;
   logoImage.src = data.current.condition.icon;
   weatherStatus.innerHTML = data.current.condition.text;
+
+  // onclick event
+  function setBackground(weatherStatus) {
+    if (weatherStatus == "Rain") {
+      body.style.background.src = "./resources/rainy-weather.jpg";
+    } else if (weatherStatus == "Snow") {
+      body.style.background.src = "./resources/snowy-weather.jpg";
+    } else if (weatherStatus == "Clear") {
+      body.style.background.src = "./resources/sunny-weather.jpg";
+    } else if (weatherStatus == "Clouds") {
+      body.style.background.src = "./resources/cloudy-weather.jpg";
+    }
+  }
+
+  setBackground(weatherStatus);
 };
