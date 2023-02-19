@@ -47,17 +47,19 @@ const getData = async (event) => {
   weatherStatus.innerHTML = data.current.condition.text;
 
   // onclick event
-  function setBackground(weatherStatus) {
-    if (weatherStatus == "Rain") {
-      body.style.background.src = "./resources/rainy-weather.jpg";
-    } else if (weatherStatus == "Snow") {
-      body.style.background.src = "./resources/snowy-weather.jpg";
-    } else if (weatherStatus == "Clear") {
-      body.style.background.src = "./resources/sunny-weather.jpg";
-    } else if (weatherStatus == "Clouds") {
-      body.style.background.src = "./resources/cloudy-weather.jpg";
-    }
-  }
-
-  setBackground(weatherStatus);
+  
 };
+
+function setBackground(weatherStatus) {
+  if (weatherStatus == "Rain") {
+    body.style.background.src = "./resources/rainy-weather.jpg";
+  } else if (weatherStatus == "Snow") {
+    body.style.background.src = "./resources/snowy-weather.jpg";
+  } else if (weatherStatus == "Clear") {
+    body.style.background.src = "./resources/sunny-weather.jpg";
+  } else if (weatherStatus == "Clouds") {
+    body.style.background.src = "./resources/cloudy-weather.jpg";
+  }
+}
+
+setBackground(weatherStatus);
