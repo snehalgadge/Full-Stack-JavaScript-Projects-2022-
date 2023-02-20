@@ -22,9 +22,8 @@ const getData = async (event) => {
     alert("Please Enter The City Name: ");
     return;
   }
-
-  //
   const city = inputBox.value;
+
 
   // Fetch Details
 
@@ -36,6 +35,9 @@ const getData = async (event) => {
   data = orgData;
   console.log(data);
 
+  if(inputBox.value!=data){
+    alert("Please enter valid city name");
+  }
   // Displaying the data in HTML
   countryName.innerHTML = data.location.country;
   stateName.innerHTML = data.location.region;
@@ -50,16 +52,5 @@ const getData = async (event) => {
   
 };
 
-function setBackground(weatherStatus) {
-  if (weatherStatus == "Rain") {
-    body.style.background.src = "./resources/rainy-weather.jpg";
-  } else if (weatherStatus == "Snow") {
-    body.style.background.src = "./resources/snowy-weather.jpg";
-  } else if (weatherStatus == "Clear") {
-    body.style.background.src = "./resources/sunny-weather.jpg";
-  } else if (weatherStatus == "Clouds") {
-    body.style.background.src = "./resources/cloudy-weather.jpg";
-  }
-}
+let search = document.querySelector(".Search");
 
-setBackground(weatherStatus);
