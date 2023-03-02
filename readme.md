@@ -23,5 +23,6 @@ My Hashnode -[Hashnode- Snehal Gadge](https://hashnode.com/@snehal22 "Hashnode")
 
 # JAVASCRIPT PROJECT
 -[BASIC QUESTIONS](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/01_QnA)<br>
--[ON CLICK](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/02_onClick)<br>
+-[Background Color Change](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/02_bgChange)<br>
 -[DOM ASSIGNMENT](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/03_Dom)<br>
+-[Calculator](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/04_Calculator)
