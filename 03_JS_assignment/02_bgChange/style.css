@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+}
+
+.btn{
+    padding: 1.5rem 3rem;
+    border: 2px double transparent;
+    border-image: linear-gradient(to right,#2a64a6,#52598a,#c404b7,#ff00ae)2;
+    background-image: linear-gradient(to right,#973368, #87627d, #c6a0c9);
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right,#c6a0c9,#87627d,#973368);
+}
+
