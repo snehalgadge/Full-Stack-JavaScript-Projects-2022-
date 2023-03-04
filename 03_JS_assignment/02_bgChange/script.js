@@ -7,7 +7,8 @@ let index = 0;
     let colors = ["red","green", "blue","yellow","orange","purple"];
     body.style.background = colors[index];
     index++;
-
+    
+    
     if(index > colors.length-1){
         index = 0;
     }
