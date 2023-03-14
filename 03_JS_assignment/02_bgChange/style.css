@@ -10,7 +10,7 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 10vh;
     width: 100%;
 }
 
@@ -28,6 +28,19 @@ button:hover{
     background-image: linear-gradient(to right,#c6a0c9,#87627d,#973368);
 }
 
+.button-heading{
+    height: 15vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px double transparent;
+    border-image: linear-gradient(to right,#c6a0c9,#bcb5ba,#a68295)2;
+    margin-top: 18%;
+    margin-left: 25%;
+    margin-bottom: 10px;
+}
 .heading{
     text-align: center;
     font-size: 2rem;
@@ -38,7 +51,6 @@ button:hover{
 span{
     text-align: center;
     font-size: 2rem;
-    color: rgb(255, 0, 234);
-    margin-bottom: 10px;  
+    color: rgb(255, 0, 234);  
 }
 
