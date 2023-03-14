@@ -30,14 +30,15 @@ button:hover{
 
 .heading{
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2rem;
-    color: chartreuse;
+    color: rgb(255, 0, 234);
+    margin-bottom: 2px;
 }
 
 span{
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2rem;
-    color: chartreuse;
+    color: rgb(255, 0, 234);
+    margin-bottom: 10px;  
 }
+
