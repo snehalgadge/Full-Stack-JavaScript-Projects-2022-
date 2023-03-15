@@ -20,11 +20,27 @@ body{
 .quotes{
     width: 50%;
     height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
     border: 3px solid transparent;
-    border-image: linear-gradient(to right,#23074d,#c53332)2;
+    border-image: linear-gradient(to right, #f7bebe,#fbd786,#f7797d)2;
+    background-image: linear-gradient(to right, #3e5151,#decba4);
     text-align: center;
+    color: white;
+
 }
 
+.quotes p{
+    font-size: 2rem;
+    margin-bottom: 4px;
+}
+
+.quotes h3{
+    font-size: 1.2rem;
+}
 .btn{
     margin-top: 10px;
     padding: 1% 5%;
