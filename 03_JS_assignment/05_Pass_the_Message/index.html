@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Pass the Message</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h2>Pass the Message</h2>
+        <label for="message-input">Enter Your Message</label>
+        <div class="message">
+            <button class="btn"><i class="fa-sharp fa-solid fa-envelope"></i></button><input class="input" type="text">
+        </div>
+        <button onclick="getMessage()">Pass</button>
+        <p class="output"></p>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>

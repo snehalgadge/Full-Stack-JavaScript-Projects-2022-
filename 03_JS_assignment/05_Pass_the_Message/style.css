@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(#3E5151,#bc567f,#DECBA4);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container h2{
+    padding: 2rem 8rem;
+    border: 2px solid rgb(139, 134, 134);
+    color: #8d9898;
+    font-size: 2rem;
+}
+.message{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
