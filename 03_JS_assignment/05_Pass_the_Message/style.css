@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: linear-gradient(#3E5151,#bc567f,#DECBA4);
+    background-image: linear-gradient(#3E5151,#b73267,#DECBA4);
 }
 
 .container{
@@ -28,5 +28,21 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+label{
+    padding: 1rem 0;
+    color: #ced8d8;
+    font-size: 1.5rem; 
+}
+
+button i{
+    padding: 0.5rem 0.5rem;
+    font-size: 30px;
+    background-color: #a0c9c9;
+}
+
+input{
+    padding: 0.5rem 5rem;
 }
 
