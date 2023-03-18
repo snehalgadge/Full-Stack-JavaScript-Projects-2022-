@@ -5,23 +5,28 @@
 }
 
 body{
-    background-image: linear-gradient(#3E5151,#b73267,#DECBA4);
+    background-image:linear-gradient(to right,#D1AC6D, #052857);
 }
 
 .container{
-    height: 100vh;
+    height: 50vh;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 12%;
+    margin-left: 25%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid transparent;
+    border-image:linear-gradient( to right,#9aa5b7, #90a8a7,  #acac9d,  #725369,  #f5b5b5 ,#e5d4ef)2;
 }
 
 .container h2{
     padding: 2rem 8rem;
     border: 2px solid rgb(139, 134, 134);
-    color: #8d9898;
+    color: #b9caca;
     font-size: 2rem;
 }
 .message{
@@ -30,19 +35,62 @@ body{
     flex-wrap: wrap;
 }
 
-label{
-    padding: 1rem 0;
-    color: #ced8d8;
-    font-size: 1.5rem; 
-}
-
-button i{
+.btn{
     padding: 0.5rem 0.5rem;
-    font-size: 30px;
-    background-color: #a0c9c9;
+    border-radius: 10px;
+    margin-top: 25px;
+    background-image: linear-gradient( to right,#9aa5b7, #90a8a7,  #acac9d,  #f8bee8,  #f5b5b5 ,#e5d4ef)
+
+}
+.btn i{
+   
+    font-size: 20px;
+    margin-right: 2px;
+
 }
 
 input{
-    padding: 0.5rem 5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 25px;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    background-image: linear-gradient( to right,#9aa5b7, #90a8a7,  #acac9d,  #f8bee8,  #f5b5b5 ,#e5d4ef)
+
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+.pass{
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border: 2px solid #DECBA4;
+    border-radius: 8px;
+    background-color: #3E5151;
+    color: #fff;
+    background-image: linear-gradient(to right,#D1AC6D, #052857);
+}
+
+.pass:hover{
+    cursor: pointer;
+    background-image: linear-gradient( to right,#9aa5b7, #90a8a7,  #acac9d,  #f8bee8,  #f5b5b5 ,#e5d4ef);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right,#D1AC6D, #052857)2;
+    border-radius: 0;
+}
+
+.output{
+    margin-top: 15px;
+    font-size:3rem;
+    padding: 0.5rem 0.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right,  #89cddc,  #e55252,  #9ea3e7,  #e8536b ,#72de9d);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
