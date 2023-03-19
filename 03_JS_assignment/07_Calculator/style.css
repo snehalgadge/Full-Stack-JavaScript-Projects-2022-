@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,#69646f,#706a78,#514b58,#332e38,#27212E);
+}
+
+.calculator{
+    width: 300px;
+    height: 500px;
+    box-shadow: 4px 4px 300px rgb(145, 93, 93);
+    border: 2px solid #738485;
+    border-radius: 16px;
+    background: linear-gradient(#094D3E,#364B44,#98B0A8);
+    overflow: hidden;
+}
+
+/* <--------- I/O screen ---------> */
+form input{
+    height: 130px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    font-size: 2rem;
+    padding: 1rem;
+    background: linear-gradient(#98B0A8,#62736e,#364B44,#094D3E);
+    color: #fff;
+    text-align: right;
+    pointer-events: none;                               /*disable the click*/
+}
+
+/* <----------- buttons -----------> */
+.buttons{
+    margin: 8px 10px;
+}
+
+button{
+    width: 65px;
+    height: 65px;
+    font-size: 22px;
+    font-weight: 500;
+    border: 2px solid #5a8777;
+    border-radius: 50%;
+    /* box-shadow: 4px 4px 50px #bbb6c0; */
+    margin: 2px 0px;
+    cursor: pointer;
+}
+
+.btn-operations{
+    background: #3a6e62;
+    color: #fff;
+}
+
+.btn-clear , .btn-equal{
+    background: #76a79b;
+    color: #f8f8f8;
+    border: 2px solid #5f8990;
+}
