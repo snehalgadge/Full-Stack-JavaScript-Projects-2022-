@@ -1,27 +1,19 @@
-let screen = document.querySelector(".screen");
-let buttons = document.querySelectorAll(".btn");
-let equal = document.querySelector(".btn-equal");
-let clear = document.querySelector(".btn-clear");
+let input = document.querySelector("input");
 
-buttons.forEach(function(a){
-    a.addEventListener('click', function(e){
-        let value = e.target.dataset.num;
-        screen.value += value;                     //printing value on screen
-    })
-});
+let expression = '';
 
+press = (num) =>{
+    expression += num;
+    input.value = expression;
+}
 
-equal.addEventListener('click', function(e){
-    if(screen.value == ''){
-        screen.value = "";
-    }else{
-        let answer = eval(screen.value);        //evaluating the value                 
-        screen.value = answer;                  //storing on screen
-    }
-   
-})
+equal = () =>{
+    input.value = eval(expression);
+    expression = '';
+}
 
-// clearing screen
-clear.addEventListener('click',function(e){
-    screen.value = "";
-})
+erase = () =>{
+    expression = '';
+    input.value = expression;
+}
+

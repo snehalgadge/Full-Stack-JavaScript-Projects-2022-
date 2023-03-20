@@ -16,8 +16,8 @@ body{
 .calculator{
     width: 300px;
     height: 500px;
-    box-shadow: 4px 4px 300px rgb(145, 93, 93);
-    border: 2px solid #738485;
+    box-shadow: 4px 4px 300px rgb(195, 187, 187);
+    /* border: 2px solid #738485; */
     border-radius: 16px;
     background: linear-gradient(#094D3E,#364B44,#98B0A8);
     overflow: hidden;
@@ -37,9 +37,17 @@ form input{
     pointer-events: none;                               /*disable the click*/
 }
 
+input::placeholder{
+    color: #fff;
+}
 /* <----------- buttons -----------> */
 .buttons{
     margin: 8px 10px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #bad4ce;
 }
 
 button{
@@ -63,4 +71,34 @@ button{
     background: #76a79b;
     color: #f8f8f8;
     border: 2px solid #5f8990;
+}
+
+
+@media(max-width: 480px){
+    .calculator{
+        width: 250px;
+        height: 400px;
+    }
+
+    form input{
+        height: 100px;
+        width: 100%;
+    }
+    input::placeholder{
+        font-size: 30px;
+    }
+
+    .buttons{
+        margin: 15px 25px;
+    }
+
+    .btn{
+        width: 45px;
+        height: 45px;
+    }
+
+    .btn-clear , .btn-equal{
+        width: 45px;
+        height: 45px;
+    }
 }
