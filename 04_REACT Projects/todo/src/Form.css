@@ -146,4 +146,11 @@ ul{
         font-weight: 500;
         padding: 3px 15px;
     }
+    .deleteallbutton-1{
+        margin-top: 2vh;
+        font-size: 15px;
+        height: 4vh;
+        width: 25vh;
+    }
+    
 }
