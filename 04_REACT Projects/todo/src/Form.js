@@ -79,11 +79,8 @@ function Form() {
         {todos.length>=2 && 
         <>
           <div className='deleteallbutton'>
-              <button className='deleteallbutton-1' onClick={handledeleteall} >DELETE ALL ToDos</button>
+              <button className='deleteallbutton-1' onClick={handledeleteall} >Delete all ToDos</button>
           </div>
-          {/* <div className='completeallbutton'>
-              <button className='completeallbutton-1' onClick={()=>handlecompleteall()} >COMPLETE ALL</button>
-          </div> */}
         </>
         }
         

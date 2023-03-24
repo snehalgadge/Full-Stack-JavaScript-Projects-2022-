@@ -9,8 +9,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    /* margin-left: 70px; */
-    /* padding-left: 150px; */
+    
 }
 .formlabel{
     display: flex;
@@ -44,7 +43,6 @@
     text-decoration: black line-through;
 }
 .formbtn{
-    /* margin-left: 30px; */
     margin: auto;
     color: wheat;
     font-size: 15px;
@@ -63,7 +61,7 @@
     transform: scale(1.1);
 }
 ul{
-    list-style:decimal;
+    list-style: decimal;
     margin-top: 50px;
 }
 .ul-li{
@@ -74,43 +72,78 @@ ul{
 }
 .li{
     color: whitesmoke;
-    font-size: 30px;
+    font-size: 25px;
     word-wrap:break-word;
+    text-transform: capitalize;
 }
-.completed{
-    cursor: pointer;
-    font-size: 15px;
-    background-color: greenyellow;
-}
-.completed:hover,.deleted:hover,.deleteallbutton-1:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
+
 .deleted{
     cursor: pointer;
     font-size: 15px;
-    background-color: red;
+    font-weight: 500;
+    background-color: rgb(247, 0, 0);
+    padding: 5px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: #fff;
 }
-.deleteallbutton,.completeallbutton{
+
+
+.deleteallbutton{
     color:wheat;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.deleteallbutton-1,.completeallbutton-1{
+
+.deleted:hover,.deleteallbutton-1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgb(180, 63, 63);
+    color: aliceblue;
+}
+
+.deleteallbutton-1{
     margin-top: 15vh;
     font-size: 20px;
     height: 5vh;
     width: 32vh;
     background-color: red; 
     cursor: pointer;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 5px;
 }
-.completeallbutton-1{
-    margin-top: 5vh;
-    background-color: green;
+
+.deleteallbutton-1:hover{
+    color:aliceblue;
+    background-color: rgb(180, 63, 63);
 }
-.deleteallbutton-1:hover,.completeallbutton-1:hover{
-    color: wheat;
-    font-weight: 800;
-    background-color: black;
+
+
+
+@media(max-width:480px){
+    .formdiv{
+        width: 70%;
+    }
+    .formlabel{    
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .forminput{
+        width: 30vh;
+        padding-left: 10px;
+        font-size: 15px; 
+    }
+    .formbtn{
+        font-size: 15px;
+        font-weight: 600;
+        height: 40px;
+        width: 15vh;
+    } 
+    .deleted{
+        font-size: 15px;
+        font-weight: 500;
+        padding: 3px 15px;
+    }
 }
