@@ -136,10 +136,10 @@ ul{
         font-size: 15px; 
     }
     .formbtn{
-        font-size: 15px;
+        font-size: 12wpx;
         font-weight: 600;
         height: 40px;
-        width: 15vh;
+        width: 12vh;
     } 
     .deleted{
         font-size: 15px;
