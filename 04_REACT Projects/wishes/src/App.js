@@ -1,22 +1,10 @@
 import React from 'react'
+import Navbar from './components/Navbar';
 
 const App = () => {
   return (
     <>
-      <div className='navBar'>
-        <h3>Kodina</h3>
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Connect</li>
-          <li>Projects</li>
-          <li>Support</li>
-        </ul>
-        <div className='input-box'>
-          <input type={Text} placeholder='Search'></input>
-          <button>Download</button>
-        </div>
-      </div>
+      <Navbar title="Kodina" list1="class"/>
     </>
   );
 };
