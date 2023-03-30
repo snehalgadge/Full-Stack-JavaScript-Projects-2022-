@@ -5,7 +5,7 @@ const Navbar = (props) => {
   return (
     <>
       <div className='navBar'>
-        <h3>{props.title}</h3>
+        <h1>{props.title}</h1>
         <ul>
           <li>{props.list1}</li>
           <li>About Us</li>
