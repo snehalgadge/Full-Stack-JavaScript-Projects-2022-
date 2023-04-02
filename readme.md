@@ -25,4 +25,5 @@ My Hashnode -[Hashnode- Snehal Gadge](https://hashnode.com/@snehal22 "Hashnode")
 -[BASIC QUESTIONS](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/01_QnA)<br>
 -[Background Color Change](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/02_bgChange)<br>
 -[DOM ASSIGNMENT](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/03_Dom)<br>
--[Calculator](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/04_Calculator)
+-[Calculator](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/04_Calculator)<br>
+-[Random Quote Generator](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/04_Quote_Generator)<br>
