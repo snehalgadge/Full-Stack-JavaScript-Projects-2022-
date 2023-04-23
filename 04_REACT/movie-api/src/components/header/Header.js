@@ -9,13 +9,13 @@ const Header = () => {
             <Link to={'/'}>
                 <img 
                 className='header-icon' 
-                src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/100px-IMDB_Logo_2016.svg.png'
+                src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/90px-IMDB_Logo_2016.svg.png'
                 alt='logo'>
                 </img>
             </Link>
-            <Link to={'/movies/popular'} style={{textDecoration: "none",fontSize: "1.3rem",cursor: "pointer",color: "white" }}>Popular</Link>
-            <Link to={'/movies/top_rated'} style={{textDecoration: "none",fontSize: "1.3rem",cursor: "pointer",color: "white"}}>Top Rated</Link>
-            <Link to={'/movies/upcoming'} style={{textDecoration: "none",fontSize: "1.3rem",cursor: "pointer",color: "white"}}>Upcoming</Link>
+            <Link to={'/movies/popular'} style={{textDecoration: "none",fontSize: "1.3rem",cursor: "pointer",color: "red", fontWeight:"bold" }}>Popular</Link>
+            <Link to={'/movies/top_rated'} style={{textDecoration: "none",fontSize: "1.3rem",cursor: "pointer",color: "red", fontWeight:"bold"}}>Top Rated</Link>
+            <Link to={'/movies/upcoming'} style={{textDecoration: "none",fontSize: "1.3rem",cursor: "pointer",color: "red", fontWeight:"bold"}}>Upcoming</Link>
         </div>
       
     </div>

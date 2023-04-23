@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+export const API_KEY = "66a38003"
 const App = () => {
   const [pokemonName, setPokemonName] = useState("");
   const [pokemonData, setPokemonData] = useState({});
@@ -10,7 +11,7 @@ const App = () => {
   };
 
   const searchPokemon = () => {
-    axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+    axios.get(`https://pokeapi.co/api/v2/ability/${pokemonName}`)
       .then((response) => {
         if (response.status === 200) {
           console.log(response.data);

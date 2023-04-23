@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Components
 import Header  from './components/header/Header'
+import Home from './pages/Home/Home'
+import MovieList from './components/movieList/movieList';
+import MovieDetails from './pages/moveDetails/MovieDetails';
 
 const App = () => {
   return (
@@ -10,9 +13,9 @@ const App = () => {
       <Router>
         <Header/>
         <Routes>
-          <Route index element={<h1>Hello World</h1>}></Route>
-          <Route path='movie/:id' element={<h1>movie details page</h1>}></Route>
-          <Route path='movies/:type' element={<h1>Movie list page</h1>}></Route>
+          <Route index element={<Home/>}></Route>
+          <Route path='movie/:id' element={<MovieDetails/>}></Route>
+          <Route path='movies/:type' element={<MovieList/>}></Route>
           <Route path='/*' element={<h1>Error Page</h1>}></Route>
         </Routes>
       </Router>
