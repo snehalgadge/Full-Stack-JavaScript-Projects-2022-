@@ -3,8 +3,8 @@ import "./index.css"
 import Home from './pages/Home'
 import Project from './pages/Project'
 import About from './pages/About'
-import Contact from './pages/Contact'
-import {Router,Routes, Route } from 'react-router-dom'
+import Connect from './pages/Connect'
+import {Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
         <Route path='/'element={<Home/>} />
         <Route path='/project'element={<Project/>} />
         <Route path='/about'element={<About/>} />
-        <Route path='/contact'element={<Contact/>} />
+        <Route path='/connect'element={<Connect/>} />
       </Routes>
     </>
   )

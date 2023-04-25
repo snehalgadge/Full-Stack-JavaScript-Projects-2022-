@@ -22,6 +22,7 @@
 }
 
 @media screen and (max-width:1040px) {
+
     .header a img{
         position: absolute;
         top: 2%;
@@ -36,10 +37,15 @@
         background-color: rgba(0, 0, 0, 0.9);
         position: absolute;
         top: 0;
-        left: 0;
+        left: -80%;
         z-index: -3;
+        transition: 0.3s;
     }
 
+    .nav-menu.active{
+        left: 0;
+       
+    }
     .nav-menu li{
         padding: 1rem 0;
     }
