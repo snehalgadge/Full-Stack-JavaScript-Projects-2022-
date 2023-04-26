@@ -15,7 +15,7 @@ const HeroSection = () => {
       <h1>FrontEnd Developer</h1>
       <div>
         <Link to="/project" className='btn'>Projects</Link>
-        <Link to="/connect" className='btn'>Connect </Link>
+        <Link to="/connect" className='btn btn-light'>Connect</Link>
       </div>
       </div>
     </div>
