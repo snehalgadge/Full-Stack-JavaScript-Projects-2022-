@@ -11,7 +11,7 @@
 }
 
 .header-bg{
-    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(29,4,122,0.9501050420168067) 30%, rgba(88,11,152,1) 100%);
+    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3, 43, 10, 0.95) 30%, rgb(35, 2, 42) 100%);
     transition: 0.5s;
 }
 

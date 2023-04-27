@@ -14,6 +14,7 @@ const Footer = () => {
                         <p>202 Housing Society.</p>
                         <p>India</p>
                     </div>
+                </div>    
                 <div className='phone'>
                    <h4><FaPhone size={20} 
                    style={{color:'#fff',marginRight:'2rem'}}/>
@@ -24,18 +25,17 @@ const Footer = () => {
                    style={{color:'#fff',marginRight:'2rem'}}/>
                    snehalgadge205@gmail.com</h4>
                 </div>
-                </div>
             </div>
             <div className='right'>
                 <h1>About the company</h1>
                 <p>This is Snehal. I enjoy doing coding and accepting challenges </p>
                 <div className='social'>
-                <FaInstagram size={20} 
-                   style={{color:'#fff',marginRight:'2rem'}}/>
-                <FaLinkedin size={20} 
-                   style={{color:'#fff',marginRight:'2rem'}}/>
-                <FaGithub size={20} 
-                   style={{color:'#fff',marginRight:'2rem'}}/>
+                <FaInstagram size={40} 
+                   style={{color:'#fff',marginRight:'2rem',cursor:'pointer'}}/>
+                <FaLinkedin size={40} 
+                   style={{color:'#fff',marginRight:'2rem',cursor:'pointer'}}/>
+                <FaGithub size={40} 
+                   style={{color:'#fff',marginRight:'2rem',cursor:'pointer'}}/>
                 </div>
             </div>
         </div>
