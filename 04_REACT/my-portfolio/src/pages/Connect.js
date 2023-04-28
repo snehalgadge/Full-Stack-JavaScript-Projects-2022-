@@ -1,9 +1,13 @@
 import React from 'react'
+import Footer from '../components/Footer/Footer'
+import Navbar from '../components/Navbar/Navbar'
+
 
 const Connect = () => {
   return (
     <div>
-      <h1>Contact</h1>
+      <Navbar/>
+      <Footer/>
     </div>
   )
 }
