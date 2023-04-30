@@ -7,7 +7,7 @@
 
 .hero-section::before{
     content: "";
-    background: url('https://images.unsplash.com/photo-1586077427825-15dca6b44dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+    background: url(./heroImg2.jpg);
     background-size: cover;
     background-position: center top;
     height: 100%;
