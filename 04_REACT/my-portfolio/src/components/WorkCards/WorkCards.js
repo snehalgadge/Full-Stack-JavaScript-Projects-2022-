@@ -1,7 +1,6 @@
 import './WorkCards.css';
 
 import React from 'react'
-import workcardImg from './workcardImg.jpg'
 import { NavLink } from 'react-router-dom';
 
 const WorkCards = (props) => {

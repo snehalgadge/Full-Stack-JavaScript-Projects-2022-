@@ -7,7 +7,7 @@
 
 .hero-section::before{
     content: "";
-    background: url(./heroImg2.jpg);
+    background: url;
     background-size: cover;
     background-position: center top;
     height: 100%;
