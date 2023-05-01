@@ -5,7 +5,14 @@
 }
 
 .board-container{
- margin: 10% 30%;
+ margin: 5% 30%;
+}
+
+.board-container h2{
+  color: #f70945;
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 3rem;
 }
 
 .board-row{
@@ -15,8 +22,10 @@
 }
 
 .square{
-  border: 1px solid black;
-  height: 15vh;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right,#ba194e,#84709b);
+  border-image-slice: 1;
+  height: 20vh;
   width: 35%;
   display: flex;
   align-items: center;
