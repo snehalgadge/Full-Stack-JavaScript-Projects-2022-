@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import './AboutContent.css'
+import AboutContentImg from './AboutContentImg.jpg'
+import AboutContentImg2 from './AboutContentImg2.jpg'
 
 import React from 'react'
 
@@ -16,7 +18,10 @@ const AboutContent = () => {
         <div className='right'>
             <div className='img-container'>
                 <div className='img-stack top'>
-                    <img src='' alt='img'/>
+                    <img src={AboutContentImg2} className='img' alt='img'/>
+                </div>
+                <div className='img-stack bottom'>
+                    <img src={AboutContentImg} className='img' alt='img'/>
                 </div>
             </div>
         </div>

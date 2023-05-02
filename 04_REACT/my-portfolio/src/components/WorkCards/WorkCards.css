@@ -1,3 +1,10 @@
+.work-container{
+    background-image: url('./workcardImg2.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
 .project-heading{
     text-align: center;
     padding: 4rem 0 2rem 0;
