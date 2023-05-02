@@ -1,8 +1,14 @@
-.work-container{
-    background-image: url('./workcardImg2.jpg');
-    background-repeat: no-repeat;
-    width: 100%;
+.work-container::before{
+    content: "";
+    background: url('./heroImg2.jpg');
     background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
 }
 
 .project-heading{
