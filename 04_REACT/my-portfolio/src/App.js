@@ -1,23 +1,25 @@
-import React from 'react'
-import "./index.css"
-import Home from './pages/Home'
-import Project from './pages/Project'
-import About from './pages/About'
-import Connect from './pages/Connect'
-import {Routes, Route } from 'react-router-dom'
 
-const App = () => {
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from "./components/NavBar";
+import { Banner } from "./components/Banner";
+import { Skills } from "./components/Skills";
+import { Projects } from "./components/Projects";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
+
+function App() {
   return (
-    <>
-      <Routes>
-        <Route path='/'element={<Home/>} />
-        <Route path='/project'element={<Project/>} />
-        <Route path='/about'element={<About/>} />
-        <Route path='/connect'element={<Connect/>} />
-      </Routes>
-    </>
-  )
+    <div className="App">
+      <NavBar />
+      <Banner />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
+
 
