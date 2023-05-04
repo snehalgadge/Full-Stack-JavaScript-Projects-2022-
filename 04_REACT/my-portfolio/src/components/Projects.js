@@ -11,35 +11,40 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
+      title: "IMBD Clone",
       description: "Design & Development",
       imgUrl: projImg1,
+      view: 'url',
+      source: 'url'
     },
     {
-      title: "Business Startup",
+      title: "Tic Tac Toe",
       description: "Design & Development",
       imgUrl: projImg2,
+      view: 'url',
+      source: 'url'
     },
     {
-      title: "Business Startup",
+      title: "Random Quote Generator",
       description: "Design & Development",
       imgUrl: projImg3,
+      view: 'url',
+      source: 'url'
     },
     {
-      title: "Business Startup",
+      title: "Basic Calculator",
       description: "Design & Development",
       imgUrl: projImg1,
+      view: 'url',
+      source: 'url',
     },
     {
-      title: "Business Startup",
+      title: "Vs Code Clone",
       description: "Design & Development",
       imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+      view: 'url',
+      source: 'url'
+    }
   ];
 
   return (
@@ -51,7 +56,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>I am happy to describe the project I made with ReactJs, JavaScript, Tailwind. These projects are a great showcase of my skills in web development and my ability to work with a variety of different technologies. </p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
