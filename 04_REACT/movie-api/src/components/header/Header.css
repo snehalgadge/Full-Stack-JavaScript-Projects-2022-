@@ -31,3 +31,25 @@ a > span:hover {
 .user__avatar {
     font-size: 2rem;
 }
+
+@media screen and  (max-width: 768px) {
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    a{
+      padding: 0 10px;
+      font-size: 1rem;
+    }
+  
+    .headerLeft img {
+      width: 50px;
+    }
+  
+    .user__avatar {
+      font-size: 1.5rem;
+    }
+  }

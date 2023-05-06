@@ -13,3 +13,18 @@ color:white;
     flex-wrap: wrap ;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .movie__list {
+      padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+  
+    .list__title {
+      font-size: 1.25rem;
+      margin: 1.5rem;
+    }
+  
+    .list__cards {
+      justify-content: space-between;
+    }
+  }

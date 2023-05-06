@@ -143,3 +143,58 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 844px) {
+    .movie__detail {
+    flex-direction: column;
+    bottom: 0;
+    }
+    
+    .movie__poster {
+    width: 200px;
+    }
+    
+    .movie__detailLeft {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    }
+    
+    .movie__detailRight {
+    height: auto;
+    }
+    
+    .movie__links {
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    }
+    
+    .movie__homeButton {
+    margin-bottom: 1rem;
+    }
+    
+    .newTab {
+    margin-left: 0;
+    }
+    
+    .synopsisText {
+    font-size: 1.2rem;
+    }
+    
+    .movie__production {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    }
+    
+    .movie__productionComapany {
+    width: 150px;
+    margin: 1rem;
+    }
+    }
+    
+    
+    
+    
+    
+    

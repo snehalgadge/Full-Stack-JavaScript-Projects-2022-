@@ -60,3 +60,36 @@
     font-size: .75rem;
     margin-bottom: 0.25rem;
 }
+
+@media (max-width: 768px) {
+    .cards {
+      margin: 0.1rem;
+      min-width: auto;
+      height: auto;
+    }
+  
+    .cards__img {
+      height: 200px;
+    }
+  
+    .cards__overlay {
+      padding: 0.5rem;
+      height: 200px;
+      width: 90%;
+    }
+  
+    .card__title {
+      font-size: 0.9rem;
+      margin-bottom: 0.3rem;
+    }
+  
+    .card__runtime {
+      font-size: 0.7rem;
+      margin-bottom: 0.2rem;
+    }
+  
+    .card__description {
+      font-size: 0.7rem;
+      margin-bottom: 0.2rem;
+    }
+  }
