@@ -1,33 +1,9 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
   box-sizing: border-box;
 }
 
-.board-container{
- margin: 5% 30%;
-}
-
-.board-container h2{
-  color: #f70945;
-  text-align: center;
-  margin-bottom: 5%;
-  font-size: 3rem;
-}
-
-.board-row{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.square{
-  border: 3px solid transparent;
-  border-image: linear-gradient(to right,#ba194e,#84709b);
-  border-image-slice: 1;
-  height: 20vh;
-  width: 35%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+body {
+  margin: 0;
+  background-color: #efefef;
+  font-family: "Fredoka", sans-serif;
 }
