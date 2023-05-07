@@ -9,7 +9,7 @@ My Hashnode -[Hashnode- Snehal Gadge](https://hashnode.com/@snehal22 "Hashnode")
 ## Projects
 # HTML/CSS Projects
 
--[PROJECT 1](https://github.com/snehalgadge/FSJS-2.0/tree/main/01_HTML%20%26%20CSS%20Project/01%20Project)<br>
+-[PROJECT 1](https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/01_HTML%20%26%20CSS/01%20Project)<br>
 -[PROJECT 2](https://github.com/snehalgadge/FSJS-2.0/tree/main/01_HTML%20%26%20CSS%20Project/02%20Project)<br>
 -[PROJECT 3](https://github.com/snehalgadge/FSJS-2.0/tree/main/01_HTML%20%26%20CSS%20Project/03%20Project)<br>
 -[PROJECT 4](https://github.com/snehalgadge/FSJS-2.0/tree/main/01_HTML%20%26%20CSS%20Project/04%20Project)<br>
