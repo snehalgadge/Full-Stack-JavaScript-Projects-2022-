@@ -22,7 +22,7 @@ My Netlify -[Netlify - Snehal Gadge](https://app.netlify.com/teams/snehalgadge20
 ## [Live Link](https://rquoteg.netlify.app/)
 ![Output](https://user-images.githubusercontent.com/91423583/236692475-f62975ba-e75a-4a0b-977d-ad58ab66536f.png)
 <br><br><br>
-# [ReactJs Project]
+# [ReactJs Project](https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/04_REACT)
 ## [1.Tic-Tac-Toe](https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/04_REACT/tic-tac-toe)<br>
 ## [Live Link](https://jsticactoe.netlify.app/)
 ![Output](https://user-images.githubusercontent.com/91423583/236693085-1cd0b29a-906e-4a9b-9c85-0a6c41fb8509.png)
