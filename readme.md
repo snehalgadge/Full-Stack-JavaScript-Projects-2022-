@@ -8,12 +8,12 @@ My Netlify -[Netlify - Snehal Gadge](https://app.netlify.com/teams/snehalgadge20
 <br>
 
 ## Projects
-# 1)HTML & TAILWIND CSS PROJECT 
+# [1)HTML & TAILWIND CSS PROJECT](https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/02_Tailwind)
 ## [VS CODE](https://github.com/snehalgadge/FSJS-2.0/tree/main/02_Tailwind%20CSS%20Project/01_Talwind_vscode)<br>
 ## [Live Link](https://tailwindvscode.netlify.app/) <br>
 ![](https://user-images.githubusercontent.com/91423583/236691750-e8883afb-9d2e-4867-8dce-d0d9019a0fca.png)
-
-# 2)JAVASCRIPT PROJECT
+<br>
+# [2)JAVASCRIPT PROJECT](https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/03_JavaScript)
 ## [1)Calculator](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/04_Calculator)<br>
 ## [Live Link](https://scalculate.netlify.app/)
 ![Output](https://user-images.githubusercontent.com/91423583/236692434-4d454eda-c837-4276-be81-7c0fabfc48c4.png)
