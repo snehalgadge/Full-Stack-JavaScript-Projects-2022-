@@ -7,19 +7,10 @@ My Hashnode -[Hashnode- Snehal Gadge](https://hashnode.com/@snehal22 "Hashnode")
 <br>
 
 ## Projects
-# HTML/CSS Projects
-
--[PROJECT 1](https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/01_HTML%20%26%20CSS/01%20Project)<br>
--[PROJECT 2](https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/01_HTML%20%26%20CSS/02%20Project)<br>
--[PROJECT 3](https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/01_HTML%20%26%20CSS/03%20Project)<br>
--[PROJECT 4](https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/01_HTML%20%26%20CSS/04%20Project)<br>
--[PROJECT 5](https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/01_HTML%20%26%20CSS/05%20Project)<br>
--[PROJECT 6](https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/01_HTML%20%26%20CSS/06%20Project)<br>
--[Credit Card Landing Page](https://github.com/snehalgadge/FSJS-2.0/tree/main/01_HTML%20%26%20CSS%20Project/07%20Project-%20Credit%20Card%20Landing%20Page)<br>
-
-
-# TAILWIND PROJECT 
--[VS CODE](https://github.com/snehalgadge/FSJS-2.0/tree/main/02_Tailwind%20CSS%20Project/01_Talwind_vscode)
+# HTML & TAILWIND CSS PROJECT 
+-[VS CODE](https://github.com/snehalgadge/FSJS-2.0/tree/main/02_Tailwind%20CSS%20Project/01_Talwind_vscode)<br>
+-[Live Link](https://tailwindvscode.netlify.app/) <br>
+![](https://user-images.githubusercontent.com/91423583/236691750-e8883afb-9d2e-4867-8dce-d0d9019a0fca.png)
 
 # JAVASCRIPT PROJECT
 -[BASIC QUESTIONS](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/01_QnA)<br>
