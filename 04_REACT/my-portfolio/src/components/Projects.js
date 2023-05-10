@@ -31,21 +31,21 @@ export const Projects = () => {
       description: "The Basic Calculator is created with the help of JavaScript. In this user can do basic mathematical calculations.",
       imgUrl: projImg3,
       view: "https://scalculate.netlify.app/" ,
-      source: "https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/04_Calculator"
+      source: "https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/03_JavaScript/07_Calculator"
     },
     {
       title: "Random Quote Generator ",
       description: "Random Quote Generator is a simple app, in which user can generate quote by clicking a button",
       imgUrl: projImg4,
       view: "https://rquoteg.netlify.app/" ,
-      source: "https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/04_Quote_Generator" 
+      source: "https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/03_JavaScript/04_Quote_Generator" 
     },
     {
       title: "Vs Code Clone",
       description: "To understand the working of Tailwind , I build Vs Code clone",
       imgUrl: projImg5,
       view: "https://tailwindvscode.netlify.app/" ,
-      source: "https://github.com/snehalgadge/FSJS-2.0/tree/main/02_Tailwind%20CSS%20Project/01_Talwind_vscode"
+      source: "https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/02_Tailwind/01_Talwind_vscode"
     }
   ];
 
