@@ -13,36 +13,36 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "IMBD Clone",
-      description: "Design & Development",
+      title: "IMDb Clone",
+      description: "I have created IMDb clone with the help of React and context. It has components like popular , top rated.",
       imgUrl: projImg1,
-      view: "https://jsticactoe.netlify.app/" ,
+      view: "https://imbdclone.netlify.app/" ,
       source: "https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/04_REACT/movie-api"
     },
     {
       title: "Tic Tac Toe",
-      description: "Design & Development",
+      description: "This is a small game, which is again built with the help of react. This game has the functionality where user can see their scores and reset the board.",
       imgUrl: projImg2,
       view: "https://jsticactoe.netlify.app/" ,
       source: "https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/04_REACT/tic-tac-toe"
     },
     {
       title: "Basic Calculator",
-      description: "Design & Development",
+      description: "The Basic Calculator is created with the help of JavaScript. In this user can do basic mathematical calculations.",
       imgUrl: projImg3,
       view: "https://scalculate.netlify.app/" ,
       source: "https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/04_Calculator"
     },
     {
       title: "Random Quote Generator ",
-      description: "Design & Development",
+      description: "Random Quote Generator is a simple app, in which user can generate quote by clicking a button",
       imgUrl: projImg4,
       view: "https://rquoteg.netlify.app/" ,
       source: "https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/04_Quote_Generator" 
     },
     {
       title: "Vs Code Clone",
-      description: "Design & Development",
+      description: "To understand the working of Tailwind , I build Vs Code clone",
       imgUrl: projImg5,
       view: "https://tailwindvscode.netlify.app/" ,
       source: "https://github.com/snehalgadge/FSJS-2.0/tree/main/02_Tailwind%20CSS%20Project/01_Talwind_vscode"

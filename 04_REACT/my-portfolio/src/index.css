@@ -81,6 +81,9 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+.gradient {
+  fill: linear-gradient(to bottom, #ff0000, #0000ff);
+}
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -473,6 +476,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+.proj-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.proj-btn a{
+  color: #000;
+  text-decoration: none;
+}
+.proj-btn .btn{
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  padding: 15px 60px;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  border-radius: 18px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.proj-btn .btn:hover{
+  color: #fff;
 }
 
 /************ Projects Css ************/
