@@ -14,7 +14,7 @@ My Netlify -[Netlify - Snehal Gadge](https://app.netlify.com/teams/snehalgadge20
 ![Output](https://user-images.githubusercontent.com/91423583/236691750-e8883afb-9d2e-4867-8dce-d0d9019a0fca.png)
 <br><br><br>
 # [JAVASCRIPT PROJECT](https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/03_JavaScript)
-## [1.Calculator](https://github.com/snehalgadge/FSJS-2.0/tree/main/03_JS_assignment/07_Calculator)<br>
+## [1.Calculator](https://github.com/snehalgadge/Full-Stack-JavaScript-Projects-2022-/tree/main/03_JavaScript/07_Calculator)<br>
 ## [Live Link](https://scalculate.netlify.app/)
 ![Output](https://user-images.githubusercontent.com/91423583/236692434-4d454eda-c837-4276-be81-7c0fabfc48c4.png)
 <br> <br>
