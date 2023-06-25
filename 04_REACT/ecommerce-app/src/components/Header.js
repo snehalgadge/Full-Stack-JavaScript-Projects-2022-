@@ -66,11 +66,30 @@ const Header = () => {
                 src='images/cart.svg'
                 alt='cart'></img>
                 <div>
-                  <p className='bg-white text-gray-900 ml-1 text-center rounded-sm'>0</p>
-                  <p className='text-white ml-1'>$0.00</p>
+                  <p className='bg-white text-gray-900 ml-1 text-center rounded-lg'>0</p>
+                  <p className='text-white ml-1'>&#8377;0.00</p>
                 </div>
                 </Link>
               </div>
+        </div>
+      </div>
+    </header>
+    <header className='py-3 bg-[#232f3e]'>
+      <div className='flex text-white'>
+      <div className='w-[30%]'></div>
+        <div className='flex justify-start items-center w-[70%]'>
+          <NavLink to="/"
+          className='px-4 text-[14px] leading-[14px] tracking-[0.3] font-[400] uppercase hover:text-gray-300'>
+          Home</NavLink>
+          <NavLink to="/"
+          className='px-4 text-[14px] leading-[14px] tracking-[0.3] font-[400] uppercase hover:text-gray-300'>
+          Our Store</NavLink>
+          <NavLink to="/"
+          className='px-4 text-[14px] leading-[14px] tracking-[0.3] font-[400] uppercase hover:text-gray-300'>
+          Blog</NavLink>
+          <NavLink to="/contact"
+          className='px-4 text-[14px] leading-[14px] tracking-[0.3] font-[400] uppercase hover:text-gray-300'>
+          Contact</NavLink>
         </div>
       </div>
     </header>
