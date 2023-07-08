@@ -1,0 +1,115 @@
+import { v4 as uuidv4 } from 'uuid';
+
+export const allItems = [{
+    _id:uuidv4(),
+    title:"All Department"
+  },
+  {  
+     _id:uuidv4(),
+     title:"Art & Craft"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Automotive"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Appliances"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Baby"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Beauty & Personal Care"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Books"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Computers"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Deals"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Digital Music"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Electronics"
+  },
+  {  
+    id:uuidv4(),
+    title:"Furniture"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Computers"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Deals"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Digital Music"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Electronics"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Furniture"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Books"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Computers"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Deals"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Digital Music"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Electronics"
+  },
+  {  
+    _id:uuidv4(),
+     title:"Furniture"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Computers"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Deals"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Digital Music"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Electronics"
+  },
+  {  
+    _id:uuidv4(),
+    title:"Furniture"
+  },
+]
