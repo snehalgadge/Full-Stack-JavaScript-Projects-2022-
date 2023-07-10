@@ -5,10 +5,10 @@
 @tailwind utilities;
 
 
-@Layer components{
-  .headerHover{
-    @apply px-2 h-[80%] flex items-center border border-transparent hover:border-green-700
-    cursor-pointer duration-100 hover:text-blue-500
+@layer components {
+  .headerHover {
+    @apply px-2 h-[80%] flex items-center border border-transparent hover:border-white
+    cursor-pointer
+    duration-100;
   }
 }
-

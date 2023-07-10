@@ -24,6 +24,7 @@ module.exports = {
       },
       colors: {
         amazon_blue: "#232F3E",
+        amazon_light: "#131921",
         amazon_yellow: "#febd69",
         whiteText: "#ffffff",
         lightText: "#ccc",
