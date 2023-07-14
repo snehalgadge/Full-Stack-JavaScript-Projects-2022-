@@ -113,3 +113,79 @@ export const allItems = [{
     title:"Furniture"
   },
 ]
+
+export const middleList = [
+  {
+    _id: uuidv4(),
+    title: "Get to Know Us",
+    listItem: [
+      {
+        _id: uuidv4(),
+        listData:[
+          "Careers",
+          "Blog",
+          "About Amazon",
+          "Investor Realtions",
+          "Amazon Devices",
+          "Amazon Science",
+        ],
+      },
+    ],
+  },
+  {
+    _id: uuidv4(),
+    title: "Make Money with Us",
+    listItem: [
+      {
+        _id: uuidv4(),
+        listData:[
+          "Sell product on Amazon",
+          "Sell on Amazon Business",
+          "Sell apps on Amazon",
+          "Become an Affiliate",
+          "Sell product with Us",
+          "Host an Amazon Hub",
+          "See More MAke Money with Us",
+        ],
+      },
+    ],
+  },
+  {
+     _id: uuidv4(),
+    title: " Amazon Payment Products",
+    listItem: [
+      {
+        _id: uuidv4(),
+        listData:[
+          "Become an Affiliate",
+          "Sell product with Us",
+          "Host an Amazon Hub",
+          "See More MAke Money with Us",
+        ],
+      },
+    ],
+},
+
+{ 
+  _id: uuidv4(),
+  title: "Let US Help You",
+  listItem: [
+    {
+      _id: uuidv4(),
+      listData:[
+        "Amazon and COVID-19",
+        "Your Account",
+        "Your Orders",
+        "Shipping Rates",
+        "Return & Replacement",
+        "Manage Your Content",
+        "Amazon Assistant",
+        "FAQ Help",
+      ],
+    },
+  ],
+},
+]
+
+ 
+   

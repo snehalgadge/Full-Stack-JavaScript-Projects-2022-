@@ -1,16 +1,34 @@
 import React from 'react'
+import{
+  createBrowserRouter,
+  createRoutesFromElements,
+  Outlet,
+  Route,
+  RouterProvider,
+} from "react-router-dom"
 import Header from './components/Header/Header'
-import Banner from './pages/Home/Banner'
-// import Layout from './components/Layout'
-// import Home from './pages/Home'
-// import About from './pages/About'
-// import Contact from './pages/Contact'
+import Footer from './components/Footer/Footer'
+import Home from './pages/Home'
+
+const Layout =() =>{
+  return(
+    <>
+    <Header />
+    <Outlet />
+    <Footer />
+    </>
+  )
+}
 
 const App = () => {
+  const router = createBrowserRouter(createRoutesFromElements(
+      <Route path="/" element={<Layout />}>
+      <Route index element={<Home />}></Route>
+      </Route> 
+  ))
   return (
    <>
-   <Header />
-   <Banner />
+   <RouterProvider router={router}></RouterProvider>
    </>
   )
 }

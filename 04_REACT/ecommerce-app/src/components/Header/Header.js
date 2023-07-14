@@ -21,7 +21,7 @@ const Header = () => {
     })
   },[ref, setShowAll])
   return (
-    <div className='w-full font-bodyFont'>
+    <div className='w-full font-bodyFont sticky top-0 z-50'>
         <div className='w-full bg-amazon_blue text-white px-4 py-3 flex items-center gap-4' >
             {/* <------------Image  here -----------> */}
             <div className='headerHover'>

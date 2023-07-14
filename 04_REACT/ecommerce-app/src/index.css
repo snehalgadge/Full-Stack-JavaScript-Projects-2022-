@@ -11,4 +11,12 @@
     cursor-pointer
     duration-100;
   }
+  .footerLink{
+    @apply text-sm tracking-wide hover:text-gray-100 cursor-pointer 
+    hover:underline duration-150;
+  }
+  .footerBottom{
+    @apply flex gap-1 items-center justify-center border border-gray-500
+    hover:border-amazon_yellow cursor-pointer duration-200 px-2 py-1;
+  }
 }

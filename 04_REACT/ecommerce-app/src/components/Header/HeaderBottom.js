@@ -39,7 +39,7 @@ const HeaderBottom = () => {
         {
             sidebar && (
                 <div className='w-full h-screen text-black fixed top-0 left-0 
-                bg-amazon_blue bg-opacity-50'>
+                bg-amazon_blue bg-opacity-50 z-10'>
                     <div className='w-full h-full relative'> 
                     <motion.div ref={ref} 
                     initial={{x:-500, opacity:0}}
