@@ -19,4 +19,9 @@
     @apply flex gap-1 items-center justify-center border border-gray-500
     hover:border-amazon_yellow cursor-pointer duration-200 px-2 py-1;
   }
+  .productli{
+    @apply text-gray-600 hover:text-black text-sm font-medium border-b-[1px]
+    border-b-gray-400 hover:border-b-gray-700 flex items-center justify-end gap-2
+    hover:cursor-pointer duration-300 w-full;
+  }
 }

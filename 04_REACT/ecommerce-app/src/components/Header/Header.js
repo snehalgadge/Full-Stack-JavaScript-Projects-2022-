@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useRef, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
@@ -30,15 +31,15 @@ const Header = () => {
             {/* <------------Image End here -----------> */}
 
             {/* <------------Deliver Start here ----------->  */}
-            <div className='headerHover'>
+            <div className='headerHover hidden mdl:inline-flex'>
                 <LocationOnOutlinedIcon/>
                 <p className='text-sm text-lightText font-light flex flex-col'>Deliver to 
                 <span className='font-semibold -mt-1 text-whiteText'>Delhi</span></p>
             </div>
             {/* <------------Deliver End here -----------> */}
 
-            {/* <------------Start here ----------->  */}
-            <div className='h-10 rounded-md flex flex-grow relative '>
+            {/* <------------ Searchbar Start here ----------->  */}
+            <div className='h-10 rounded-md hidden lgl:flex flex-grow relative '>
                 <span onClick={()=>setShowAll(!showAll)} className='w-14 h-full bg-gray-200 hover:bg-gray-300 border-2 
                 cursor-pointer duration-300 text-sm text-amazon_blue font-titleFont flex 
                 items-center justify-center rounded-tl-md rounded-bl-md'>
@@ -55,7 +56,8 @@ const Header = () => {
                           allItems.map((item) => {
                             return <li className='text-sm tracking-wide font-bodyFont
                             border-b-[1px] border-b-transparent 
-                            hover:border-b-amazon_blue text-black cursor-pointer duration-200' 
+                            hover:border-b-amazon_blue text-black cursor-pointer 
+                            duration-200' 
                             key={ item._id }>{ item.title }</li>
                           })
                         }
@@ -77,17 +79,21 @@ const Header = () => {
             {/* <------------SeacrhBar End here -----------> */}
 
             {/* <------------Signin Start here ----------->  */}
-            <div className='flex flex-col items-start justify-center headerHover'>
-              <p className='text-xs text-lightText font-light'>Hello, sign in</p>
-              <p className='text-xs font-semibold -mt-1 text-white'>
+           <Link to="/signin">
+           <div className='flex flex-col items-start justify-center headerHover'>
+              <p className='text-sm mdl:text-xs text-white text-lightText font-light'>
+                Hello, sign in
+              </p>
+              <p className='text-xs font-semibold -mt-1 text-white hidden mdl:inline-flex'>
               Accounts & Lists 
               <span><ArrowDropDownOutlinedIcon /></span>
               </p>
             </div>
+           </Link>
             {/* <------------Signin End here ----------->  */}
 
             {/* <------------Order Start here ----------->  */}
-            <div className='flex flex-col items-start justify-center headerHover'>
+            <div className=' hidden lgl:flex flex-col items-start justify-center headerHover'>
               <p className='text-xs text-lightText font-light'>Return</p>
               <p className='text-xs font-semibold -mt-1 text-white'>&Orders</p>
             </div>
