@@ -10,7 +10,8 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Home from './pages/Home'
 import { productsData } from './api/api'
-import Sigin from './pages/Sigin'
+import Signin from './pages/Signin'
+import Registration from './pages/Registration'
 
 const Layout =() =>{
   return(
@@ -19,15 +20,20 @@ const Layout =() =>{
     <Outlet />
     <Footer />
     </div>
-  )
-}
+  );
+};
 
 const App = () => {
   const router = createBrowserRouter(createRoutesFromElements(
-      <Route path="/" element={<Layout />}>
-      <Route index element={<Home />} loader={productsData}></Route>
-      <Route path='/signin' element={<Sigin />}></Route>
-      </Route> 
+     <Route>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} loader={productsData}></Route>
+          {/* <Route path="/cart" element={<Cart />}></Route> */}
+        </Route>
+        <Route path="/signin" element={<Signin />}></Route>
+        <Route path="/registration" element={<Registration />}></Route>
+        {/* <Route path="/checkout" element={<Checkout />}></Route> */}
+      </Route>
   ))
   return (
    <>
