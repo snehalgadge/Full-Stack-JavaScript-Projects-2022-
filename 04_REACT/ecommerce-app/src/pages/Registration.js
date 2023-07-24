@@ -7,22 +7,40 @@ const Registration = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [cPasssword, setCPasssword] = useState("");
+  const [cPasssword, setCPassword] = useState("");
 
   // Error Message
   const [errName, setErrName] = useState("");
   const [errEmail, setErrEmail] = useState("");
   const [errPassword, setErrPassword] = useState("");
-  const [errCPasssword, setErrCPasssword] = useState("");
+  const [errCPassword, setErrCPassword] = useState("");
 
   // Handle function
   const handleName = (e) =>{
     setName(e.target.value)
   }
+   const handleEmail = (e) =>{
+    setEmail(e.target.value)
+  }
+  const handlePassword = (e) =>{
+    setPassword(e.target.value)
+  }
+  const handleCPassword = (e) =>{
+    setCPassword(e.target.value)
+  }
   const handleRegistration = (e) =>{
     e.preventDefault()
     if(!name){
-      setErrName("!Enter your name");
+      setErrName("Enter your name");
+    }
+    if(!email){
+      setErrEmail("Enter your email")
+    }
+    if(!password){
+      setErrPassword("Password can't be empty")
+    }
+    if(!cPasssword){
+      setErrCPassword("Password is not matching")
     }
   }
 
@@ -51,36 +69,64 @@ const Registration = () => {
                   {
                     errName && (
                       <p className='text-red-600 text-xs font-semibold tracking-wide
-                      flex items-center gap-2 -mt-1.5'><span className="italic font-bold">!</span>{errName}</p>
+                      flex items-center gap-2 -mt-1.5'><span className="italic font-bold">
+                      !</span>{errName}</p>
                     )
                   }
                 </div>
                 <div className='flex flex-col gap-2 '>
                   <p className='text-sm font-medium'>Email or mobile phone number</p>
-                  <input 
+                  <input
+                  onChange={handleEmail} 
                   type="email"
                   className='w-full lowercase  py-1 border border-zinc-400 px-2 text-base 
                   rounded-sm outline-none focus-within:border-[#e77600] 
                   focus-within:shadow-amazonInput duration-200'
                   />
+                  {/* Validation */}
+                  {
+                    errEmail && (
+                      <p className='text-red-600 text-xs font-semibold tracking-wide
+                      flex items-center gap-2 -mt-1.5'><span className="italic font-bold">
+                      !</span>{errEmail}</p>
+                    )
+                  }
                 </div>
                 <div className='flex flex-col gap-2 '>
                   <p className='text-sm font-medium'>Password</p>
                   <input 
+                  onChange={handlePassword}
                   type="password"
                   className='w-full lowercase  py-1 border border-zinc-400 px-2 text-base 
                   rounded-sm outline-none focus-within:border-[#e77600] 
                   focus-within:shadow-amazonInput duration-200'
                   />
+                  {/* Validation */}
+                  {
+                    errPassword && (
+                      <p className='text-red-600 text-xs font-semibold tracking-wide
+                      flex items-center gap-2 -mt-1.5'><span className="italic font-bold">
+                      !</span>{errPassword}</p>
+                    )
+                  }
                 </div>
                 <div className='flex flex-col gap-2 '>
                   <p className='text-sm font-medium'>Re-enter Password</p>
                   <input 
+                  onChange={handleCPassword}
                   type="password"
                   className='w-full lowercase  py-1 border border-zinc-400 px-2 text-base 
                   rounded-sm outline-none focus-within:border-[#e77600] 
                   focus-within:shadow-amazonInput duration-100'
                   />
+                   {/* Validation */}
+                   {
+                    errCPassword && (
+                      <p className='text-red-600 text-xs font-semibold tracking-wide
+                      flex items-center gap-2 -mt-1.5'><span className="italic font-bold">
+                      !</span>{errCPassword}</p>
+                    )
+                  }
                   <p className='text-sm text-gray-600'>
                     Password must be atleast  6 charcters
                   </p>
