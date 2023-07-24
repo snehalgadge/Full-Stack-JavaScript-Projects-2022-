@@ -7,7 +7,7 @@ const Registration = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [cPasssword, setCPassword] = useState("");
+  const [cPassword, setCPassword] = useState("");
 
   // Error Message
   const [errName, setErrName] = useState("");
@@ -18,16 +18,30 @@ const Registration = () => {
   // Handle function
   const handleName = (e) =>{
     setName(e.target.value)
+    setErrName("")
   }
    const handleEmail = (e) =>{
     setEmail(e.target.value)
+    setErrEmail("")
   }
+
   const handlePassword = (e) =>{
     setPassword(e.target.value)
+    setErrPassword("")
   }
   const handleCPassword = (e) =>{
     setCPassword(e.target.value)
+    setErrCPassword("")
   }
+
+  // Email validation
+  const emailValidation = (email) =>{
+    return String(email)
+    .toLowerCase()
+    .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
+  }
+
+  // Continue button functionality start here
   const handleRegistration = (e) =>{
     e.preventDefault()
     if(!name){
@@ -35,12 +49,28 @@ const Registration = () => {
     }
     if(!email){
       setErrEmail("Enter your email")
+    }else if(!emailValidation(email)){
+      setErrEmail("Enter a valid email")
     }
     if(!password){
       setErrPassword("Password can't be empty")
+    }else if(password.length < 6){
+        setErrPassword("Password must be atleat 6 character"); 
     }
-    if(!cPasssword){
-      setErrCPassword("Password is not matching")
+    if(!cPassword){
+      setErrCPassword("Confirm your password")
+
+    }else if(cPassword !== password){
+      setErrCPassword("Password not matched")
+    }
+
+    if(name && email && password && cPassword && password.length >= 6 && 
+      cPassword === password && emailValidation(email)){
+        console.log(name,email, password,cPassword)
+        setName("");
+        setEmail("");
+        setPassword("");
+        setCPassword("");
     }
   }
 
@@ -60,8 +90,9 @@ const Registration = () => {
                   <p className='text-sm font-medium'>Your name</p>
                   <input
                   onChange={handleName} 
+                  value={name}
                   type="text"
-                  className='w-full lowercase  py-1 border border-zinc-400 px-2 text-base 
+                  className='w-full py-1 border border-zinc-400 px-2 text-base 
                   rounded-sm outline-none focus-within:border-[#e77600] 
                   focus-within:shadow-amazonInput duration-200'
                   />
@@ -78,6 +109,7 @@ const Registration = () => {
                   <p className='text-sm font-medium'>Email or mobile phone number</p>
                   <input
                   onChange={handleEmail} 
+                  value={email}
                   type="email"
                   className='w-full lowercase  py-1 border border-zinc-400 px-2 text-base 
                   rounded-sm outline-none focus-within:border-[#e77600] 
@@ -96,8 +128,9 @@ const Registration = () => {
                   <p className='text-sm font-medium'>Password</p>
                   <input 
                   onChange={handlePassword}
+                  value={password}
                   type="password"
-                  className='w-full lowercase  py-1 border border-zinc-400 px-2 text-base 
+                  className='w-full  py-1 border border-zinc-400 px-2 text-base 
                   rounded-sm outline-none focus-within:border-[#e77600] 
                   focus-within:shadow-amazonInput duration-200'
                   />
@@ -114,8 +147,9 @@ const Registration = () => {
                   <p className='text-sm font-medium'>Re-enter Password</p>
                   <input 
                   onChange={handleCPassword}
+                  value={cPassword}
                   type="password"
-                  className='w-full lowercase  py-1 border border-zinc-400 px-2 text-base 
+                  className='w-full  py-1 border border-zinc-400 px-2 text-base 
                   rounded-sm outline-none focus-within:border-[#e77600] 
                   focus-within:shadow-amazonInput duration-100'
                   />
@@ -139,7 +173,7 @@ const Registration = () => {
                 </button>
               </div>
               <p className='text-xs text-black leading-4 mt-4'>
-              By Continuing, you agree to Amazon's 
+              By Continuing, you agree to Amazon's {" "}
               <span className='text-blue-600 cursor-pointer hover:underline'>
               Conditions of Use{" "}
               </span> and <span className='text-blue-600 cursor-pointer hover:underline'>
