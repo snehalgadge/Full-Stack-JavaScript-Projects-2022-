@@ -10,10 +10,13 @@ import {logo} from "../../assets/index"
 
 // Component
 import HeaderBottom from './HeaderBottom';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
   const ref = useRef();
   const[showAll, setShowAll] = useState(false);
+  const products = useSelector((state) => state.amazonReducer.products)
+
   useEffect(() =>{
     document.body.addEventListener("click",(e) =>{
       if(e.target.contains(ref.current)){
@@ -25,9 +28,11 @@ const Header = () => {
     <div className='w-full font-bodyFont sticky top-0 z-50'>
         <div className='w-full bg-amazon_blue text-white px-4 py-3 flex items-center gap-4' >
             {/* <------------Image  here -----------> */}
+            <Link to="/">
             <div className='headerHover'>
             <img className='w-24 mt-2' src={logo} alt='logo'/>
             </div>
+            </Link>
             {/* <------------Image End here -----------> */}
 
             {/* <------------Deliver Start here ----------->  */}
@@ -100,14 +105,18 @@ const Header = () => {
             {/* <------------Order End here ----------->  */}
 
             {/* <------------Cart Start here ----------->  */}
+            <Link to="/cart">
             <div className='flex items-start justify-center headerHover relative'>
               <ShoppingCartOutlinedIcon />
               <p className='text-xs font-semibold mt-3 text-white'>
               Cart<span className='absolute text-xs -top-1 left-6 font-semibold p-1 h-4 
               bg-[#f3a847] text-amazon_blue rounded-full flex justify-center 
-              items-center'>0</span>
+              items-center'>
+                {products.length > 0?products.length:0}
+              </span>
               </p>
             </div>
+            </Link>
             {/* <------------Cart End here ----------->  */} 
         </div>
 

@@ -32,7 +32,7 @@ const Signin = () => {
     if(!email){
       setErrEmail("Enter your Email")
     }else if(!emailValidation(email)){
-      setErrEmail("Enter vaild email");
+      setErrEmail("Invaild email");
     }
     if(!password){
       setErrPassword("Enter your Password")

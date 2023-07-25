@@ -64,8 +64,13 @@ const Registration = () => {
       setErrCPassword("Password not matched")
     }
 
-    if(name && email && password && cPassword && password.length >= 6 && 
-      cPassword === password && emailValidation(email)){
+    if(name && 
+      email && 
+      password && 
+      cPassword && 
+      password.length >= 6 && 
+      cPassword === password && 
+      emailValidation(email)){
         console.log(name,email, password,cPassword)
         setName("");
         setEmail("");
