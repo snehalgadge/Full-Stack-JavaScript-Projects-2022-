@@ -5,6 +5,7 @@ import{
   Outlet,
   Route,
   RouterProvider,
+  ScrollRestoration,
 } from "react-router-dom"
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
@@ -18,6 +19,7 @@ const Layout =() =>{
   return(
     <div className='bg-gray-100'>
     <Header />
+    <ScrollRestoration />
     <Outlet />
     <Footer />
     </div>
