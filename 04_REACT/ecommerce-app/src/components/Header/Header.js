@@ -15,7 +15,7 @@ import { useSelector } from 'react-redux';
 const Header = () => {
   const ref = useRef();
   const[showAll, setShowAll] = useState(false);
-  const products = useSelector((state) => state.amazonReducer.products)
+  const products = useSelector((state) => state.amazon.products)
 
   useEffect(() =>{
     document.body.addEventListener("click",(e) =>{

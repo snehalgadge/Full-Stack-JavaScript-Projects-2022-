@@ -9,7 +9,6 @@ import { useDispatch } from 'react-redux';
 import { addToCart } from '../../redux/amazonSlice';
 
 
-
 const Products = () => {
   const disptach = useDispatch();
   const data = useLoaderData();
@@ -86,6 +85,7 @@ const Products = () => {
           <div>
             <p className='text-sm '>{item.description.substring(0,100)}...</p>
             <div className='text-yellow-500'>
+              {/* {item.rating} */}
              <StarBorderIcon />
              <StarBorderIcon />
              <StarBorderIcon />

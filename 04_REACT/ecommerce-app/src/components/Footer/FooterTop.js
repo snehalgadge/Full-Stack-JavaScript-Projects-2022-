@@ -15,8 +15,8 @@ const FooterTop = () => {
           </Link>
           <p className='text-sm mt-1'>
           New Customer?
-          <Link to="/resgistration">
-          <span className='text-blue-600 ml-1 cursor-pointer'>
+          <Link to="/registration">
+          <span className='text-blue-600 ml-1 cursor-pointer hover:underline active:text-blue-700'>
           Start here.</span>
           </Link>
           </p>

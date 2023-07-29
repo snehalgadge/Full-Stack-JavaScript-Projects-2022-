@@ -1,9 +1,14 @@
 import React, {useState} from 'react'
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import { Link } from 'react-router-dom';
+import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { Link, useNavigate } from 'react-router-dom';
+import { RotatingLines } from 'react-loader-spinner'
+import { motion } from 'framer-motion'
 import {logo} from "../assets/index"
 
 const Registration = () => {
+  const navigate = useNavigate()
+  const auth = getAuth();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,6 +19,11 @@ const Registration = () => {
   const [errEmail, setErrEmail] = useState("");
   const [errPassword, setErrPassword] = useState("");
   const [errCPassword, setErrCPassword] = useState("");
+  const [firebaseErr, setFirebaseErr] = useState("");
+
+  // loading state start
+  const [loading, setLoading] = useState(false);
+  const [successMsg, setSucessMsg] = useState("");
 
   // Handle function
   const handleName = (e) =>{
@@ -49,6 +59,7 @@ const Registration = () => {
     }
     if(!email){
       setErrEmail("Enter your email")
+      setFirebaseErr("")
     }else if(!emailValidation(email)){
       setErrEmail("Enter a valid email")
     }
@@ -64,18 +75,43 @@ const Registration = () => {
       setErrCPassword("Password not matched")
     }
 
+    // firebase registration start here
     if(name && 
       email && 
       password && 
       cPassword && 
       password.length >= 6 && 
       cPassword === password && 
-      emailValidation(email)){
-        console.log(name,email, password,cPassword)
+      emailValidation(("email"))) 
+      {
+        setLoading(true)
+        createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          updateProfile(auth.currentUser,{
+            displayName: name,
+            // photoUrl:
+          })
+          // Signed in 
+          const user = userCredential.user;
+          setLoading(false)
+          setSucessMsg("Account Created Successfully!")
+          setTimeout(()=>{
+            navigate("/signin")
+          },3000)
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          if(errorCode.includes("auth/email-already-in-use")){
+            setFirebaseErr("Email already in use, Try another one")
+          }
+        });
+        // firebase registration start here
         setName("");
         setEmail("");
         setPassword("");
         setCPassword("");
+        setFirebaseErr("");
     }
   }
 
@@ -122,10 +158,10 @@ const Registration = () => {
                   />
                   {/* Validation */}
                   {
-                    errEmail && (
+                    firebaseErr && (
                       <p className='text-red-600 text-xs font-semibold tracking-wide
                       flex items-center gap-2 -mt-1.5'><span className="italic font-bold">
-                      !</span>{errEmail}</p>
+                      !</span>{firebaseErr}</p>
                     )
                   }
                 </div>
@@ -176,6 +212,33 @@ const Registration = () => {
                 active:shadow-amazonInput duration-100">
                   Continue
                 </button>
+                {
+                  loading && (
+                    <div className='flex justify-center'>
+                      <RotatingLines
+                        strokeColor="#febd69"
+                        strokeWidth="5"
+                        animationDuration="0.75"
+                        width="50"
+                        visible={true}
+                      />
+                    </div>
+                  )
+                }
+                {
+                  successMsg && (
+                    <div>
+                      <motion.p
+                      initial={{ y: 10, opacity: 0}}
+                      animate={{ y:0, opacity: 1}} 
+                      transition={{ duration: 0.5}}
+                      className="text-base font-bodyFont font-semibold text-green-500 border-[1px]
+                      border-green-500 px-2 text-center">
+                        {successMsg}
+                      </motion.p>
+                    </div>
+                  )
+                }
               </div>
               <p className='text-xs text-black leading-4 mt-4'>
               By Continuing, you agree to Amazon's {" "}
@@ -186,8 +249,8 @@ const Registration = () => {
               </span>
               </p>
               <p className='text-xs text-black leading-4 mt-4'>
-              Already have an account?<span className='text-blue-600 cursor-pointer 
-              hover:underline'>
+              Already have an account?
+              <span className='text-blue-600 cursor-pointer hover:underline'>
               <Link to="/signin">Sign in</Link><ArrowRightIcon /></span>
               </p>
               <p className='text-xs text-black '>Buying for work?

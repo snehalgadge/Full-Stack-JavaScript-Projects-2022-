@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import amazonReducer from "../redux/amazonSlice"
+// import rootReducer from './reducers'
 
 import {
   persistStore,
@@ -19,10 +20,10 @@ const persistConfig = {
   storage,
 }
 
-const persistedReducer = persistReducer(persistConfig)
+const persistedReducer = persistReducer(persistConfig,amazonReducer)
 
 export const store = configureStore({
-  reducer: persistedReducer,
+  reducer: {amazon:persistedReducer},
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
@@ -31,4 +32,4 @@ export const store = configureStore({
     }),
 });
 
-export let persistor = persistStore(store)
+export let persistor = persistStore(store);
