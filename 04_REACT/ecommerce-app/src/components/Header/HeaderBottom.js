@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useRef, useEffect  } from 'react'
+import { useState, useRef, useEffect,useSelector  } from 'react'
 import {motion} from 'framer-motion';
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -10,6 +10,8 @@ import SideNavContent from './SideNavContent';
 const HeaderBottom = () => {
     const ref = useRef();
     const [sidebar, setSidebar] = useState(false)
+    const userInfo = useSelector((state) => state.amazon.userInfo)
+
     useEffect(() =>{
         document.body.addEventListener("click",(e) =>{
           if(e.target.contains(ref.current)){
@@ -49,9 +51,15 @@ const HeaderBottom = () => {
                         <div className='w-full bg-amazon_light text-white py-2 px-0
                         flex items-center gap-4'>
                             <AccountCircleIcon />
+                           userInfo ? (
+                            <h3 className='font-titleFont font-bold text-lg tracking-wide'>
+                            {userInfo.userName}
+                            </h3>
+                           ) : (
                             <h3 className='font-titleFont font-bold text-lg tracking-wide'>
                             Hello, Sign in
                             </h3>
+                           )
                         </div>
                         <SideNavContent 
                         title='Digittal Content & Devices' 

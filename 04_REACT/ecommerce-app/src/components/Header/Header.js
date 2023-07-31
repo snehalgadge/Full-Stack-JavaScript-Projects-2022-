@@ -1,22 +1,27 @@
 import React from 'react'
 import { useState, useRef, useEffect} from 'react';
+import { userSignout } from '../../redux/amazonSlice';
+import { useDispatch,useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { getAuth, signOut } from "firebase/auth";
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import SearchIcon from '@mui/icons-material/Search';
+import LogoutIcon from '@mui/icons-material/Logout';
 import { allItems } from '../../constants/headerData';
 import {logo} from "../../assets/index"
-
-// Component
 import HeaderBottom from './HeaderBottom';
-import { useSelector } from 'react-redux';
+
 
 const Header = () => {
   const ref = useRef();
+  const auth = getAuth();
+  const dispatch = useDispatch();
   const[showAll, setShowAll] = useState(false);
   const products = useSelector((state) => state.amazon.products)
-
+  const userInfo = useSelector((state) => state.amazon.userInfo)
+  
   useEffect(() =>{
     document.body.addEventListener("click",(e) =>{
       if(e.target.contains(ref.current)){
@@ -24,10 +29,21 @@ const Header = () => {
       }
     })
   },[ref, setShowAll])
+
+  const handleLogout = () =>{
+    signOut(auth)
+    .then(() => {
+      dispatch(userSignout())
+    })
+    .catch((error) => {
+      
+    });
+    
+  }
   return (
     <div className='w-full font-bodyFont sticky top-0 z-50'>
         <div className='w-full bg-amazon_blue text-white px-4 py-3 flex items-center gap-4' >
-            {/* <------------Image  here -----------> */}
+            {/* <------------Image start here -----------> */}
             <Link to="/">
             <div className='headerHover'>
             <img className='w-24 mt-2' src={logo} alt='logo'/>
@@ -86,9 +102,20 @@ const Header = () => {
             {/* <------------Signin Start here ----------->  */}
            <Link to="/signin">
            <div className='flex flex-col items-start justify-center headerHover'>
+            {
+              userInfo ? 
+              (
+              <p className='text-xs mdl:text-sm text-white text-lightText font-light'>
+                {userInfo.userName}
+              </p>
+              ) : 
+              (
               <p className='text-sm mdl:text-xs text-white text-lightText font-light'>
                 Hello, sign in
               </p>
+              )
+            }
+
               <p className='text-xs font-semibold -mt-1 text-white hidden mdl:inline-flex'>
               Accounts & Lists 
               <span><ArrowDropDownOutlinedIcon /></span>
@@ -116,11 +143,19 @@ const Header = () => {
               </span>
               </p>
             </div>
-            </Link>
+            </Link> 
+            {
+              userInfo && (
+                <div onClick={handleLogout} className ="flex flex-col justify-center items-center headerHover relative">
+                  <LogoutIcon />
+                  <p className="hidden mdl:inline-flex text-xs font-semibold text-white">Log out</p>
+                </div>
+              )
+            }
             {/* <------------Cart End here ----------->  */} 
         </div>
 
-        {/* Header Bottom */}
+        {/* <-- Header Bottom -->*/}
         <HeaderBottom/>
 
     </div>

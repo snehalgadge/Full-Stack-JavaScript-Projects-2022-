@@ -69,7 +69,7 @@ const Signin = () => {
         setSuccessMsg("Logged in Successfull! Welcome you back!")
         setTimeout(()=>{
           navigate("/")
-        },2000)
+        },1500)
       })
       .catch((error) => {
        setLoading(false);

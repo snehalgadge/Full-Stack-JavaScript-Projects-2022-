@@ -33,6 +33,7 @@ const Registration = () => {
    const handleEmail = (e) =>{
     setEmail(e.target.value)
     setErrEmail("")
+    setFirebaseErr("")
   }
 
   const handlePassword = (e) =>{
@@ -81,8 +82,8 @@ const Registration = () => {
       password && 
       cPassword && 
       password.length >= 6 && 
-      cPassword === password && 
-      emailValidation(("email"))) 
+      cPassword === password 
+      ) 
       {
         setLoading(true)
         createUserWithEmailAndPassword(auth, email, password)
@@ -97,16 +98,17 @@ const Registration = () => {
           setSucessMsg("Account Created Successfully!")
           setTimeout(()=>{
             navigate("/signin")
-          },3000)
+          },2500)
           // ...
         })
         .catch((error) => {
           const errorCode = error.code;
           if(errorCode.includes("auth/email-already-in-use")){
+            setLoading(false)
             setFirebaseErr("Email already in use, Try another one")
           }
         });
-        // firebase registration start here
+        
         setName("");
         setEmail("");
         setPassword("");
@@ -213,7 +215,7 @@ const Registration = () => {
                   Continue
                 </button>
                 {
-                  loading && (
+                    loading && (
                     <div className='flex justify-center'>
                       <RotatingLines
                         strokeColor="#febd69"
