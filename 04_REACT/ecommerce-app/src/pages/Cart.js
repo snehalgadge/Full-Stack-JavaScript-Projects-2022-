@@ -4,26 +4,26 @@ import { Link } from 'react-router-dom';
 import {motion} from 'framer-motion';
 import React, {useEffect, useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { deleteItem, resetCart, decrementQuantity, incrementQuantity} 
-from '../redux/amazonSlice'
+import { deleteItem, resetCart, decrementQuantity, incrementQuantity }  from '../redux/amazonSlice'
 import { emptyCart } from "../assets/index"
 
 const Cart = () => {
     const dispatch = useDispatch();
-    const products = useSelector((state) => state.amazon.products)
-    const [totalPrice, setTotalPrice] = useState("")
+    const products = useSelector((state) => state.amazon.products);
+    const [totalPrice, setTotalPrice] = useState("");
 
-    useEffect(() =>{
+    useEffect(() => {
         let Total = 0;
         products.map((item)=>{
             Total += item.price * item.quantity;
-            return setTotalPrice(Total.toFixed(2)) 
+            return setTotalPrice(Total.toFixed(2))
         })
     },[products])
+
   return (
     <div className='w-full bg-gray-100 p-4'>
         {
-            products.length > 0 ? (
+           products.length > 0 ? (
             <div className='container mx-auto h-auto grid grid-cols-5 gap-8'>
             <div className='w-full h-auto bg-white px-4 col-span-4'>
                 <div className='flex items-center justify-between border-b-[1px]
@@ -43,7 +43,8 @@ const Cart = () => {
                                 <img 
                                 src={item.image}
                                 className='w-full h-44 object-contain' 
-                                alt='ProductsImgs'/>
+                                alt='ProductsImgs'
+                                />
                                 </div>
                                 <div className='w-1/5'>
                                     <h2 className='font-semibold text-lg'>{item.title}</h2>
@@ -112,7 +113,8 @@ const Cart = () => {
         <motion.div intial={{ y:70, opacity: 0 }}
          animate= {{ y:0, opacity: 1 }}
          transition={{ dealy: 0.5, duration: 0.5 }}
-         className="w-full flex justify-center items-center gap-4 py-28">
+         className="w-full flex justify-center items-center gap-4 py-28"
+        >
             <ScrollRestoration />
             <div>
                 <img className="w-full rounded-lg mx-auto"
@@ -129,10 +131,18 @@ const Cart = () => {
               active:from-yellow-400 active:to-yellow-500 duration-200 py-2 px-8 
               rounded-md'>Continue Shopping</button></Link>
             </div>
-        </motion.div>)
+        </motion.div>
+        )
         }
     </div>
   )
 }
 
 export default Cart
+
+
+
+
+ 
+  
+

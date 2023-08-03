@@ -30,14 +30,14 @@ const Header = () => {
     })
   },[ref, setShowAll])
 
-  const handleLogout = () =>{
-    signOut(auth)
-    .then(() => {
-      dispatch(userSignout())
-    })
-    .catch((error) => {
+  // const handleLogout = () =>{
+  //   signOut(auth)
+  //   .then(() => {
+  //     dispatch(userSignout())
+  //   })
+  //   .catch((error) => {
       
-    });
+  //   });
     
   }
   return (
@@ -146,7 +146,7 @@ const Header = () => {
             </Link> 
             {
               userInfo && (
-                <div onClick={handleLogout} className ="flex flex-col justify-center items-center headerHover relative">
+                <div className ="flex flex-col justify-center items-center headerHover relative">
                   <LogoutIcon />
                   <p className="hidden mdl:inline-flex text-xs font-semibold text-white">Log out</p>
                 </div>
