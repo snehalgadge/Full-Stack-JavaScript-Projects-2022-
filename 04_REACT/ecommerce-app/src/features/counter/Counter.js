@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+
 import {
   decrement,
   increment,
@@ -8,6 +9,7 @@ import {
   incrementIfOdd,
   selectCount,
 } from './counterSlice';
+
 import styles from './Counter.module.css';
 
 export function Counter() {
