@@ -1,6 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import amazonReducer from "../redux/amazonSlice"
-// import rootReducer from './reducers'
+import amazonReducer from '../redux/amazonSlice';
 
 import {
   persistStore,
@@ -11,19 +10,19 @@ import {
   PERSIST,
   PURGE,
   REGISTER,
-} from 'redux-persist'
-import storage from 'redux-persist/lib/storage'
+} from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
 const persistConfig = {
   key: 'root',
   version: 1,
   storage,
-}
+};
 
-const persistedReducer = persistReducer(persistConfig,amazonReducer)
+const persistedReducer = persistReducer(persistConfig, amazonReducer);
 
 export const store = configureStore({
-  reducer: {amazon:persistedReducer},
+  reducer: { amazon: persistedReducer },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
