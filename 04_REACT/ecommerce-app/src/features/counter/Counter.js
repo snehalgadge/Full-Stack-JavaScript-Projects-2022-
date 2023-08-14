@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+
 import {
   decrement,
   increment,
@@ -8,6 +9,7 @@ import {
   incrementIfOdd,
   selectCount,
 } from './counterSlice';
+
 import styles from './Counter.module.css';
 
 export function Counter() {
@@ -18,7 +20,7 @@ export function Counter() {
   const incrementValue = Number(incrementAmount) || 0;
 
   return (
-    <div>
+    <React.Fragment>
       <div className={styles.row}>
         <button
           className={styles.button}
@@ -62,6 +64,6 @@ export function Counter() {
           Add If Odd
         </button>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
