@@ -54,6 +54,7 @@
 }
 
 .asyncButton {
+  /* TODO: Check if the following property is correct or not */
   composes: button;
   position: relative;
 }
