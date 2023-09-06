@@ -24,29 +24,29 @@ const Cart = () => {
     <div className='w-full bg-gray-100 p-4'>
         {
            products.length > 0 ? (
-            <div className='container mx-auto h-auto grid grid-cols-5 gap-8'>
+            <div className='container mx-auto h-auto grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-8'>
             <div className='w-full h-auto bg-white px-4 col-span-4'>
                 <div className='flex items-center justify-between border-b-[1px]
                 border-b-gray-400 py-3'>
-                    <h1 className='text-3xl font-semibold'>Shopping Cart</h1>
-                    <h4 className='text-xl font-semibold'>Subtitle</h4>
+                    <h1 className='tex-3xl font-semibold'>Shopping Cart</h1>
+                    <h4 className='text-md font-semibold md:text-xl'>Subtotle</h4>
                 </div>
                 {/* Products start here */}
-                <div>
+                <div className='max-w-screen-2xl mx-auto grid grid-cols-1  gap-6 xl:gap-10 place-items-center px-4'>
                     {
                         products.map((item)=>(
                             <div className='w-full border-b-[1px] border-b-gray-300 p-4 flex
                             items-center gap-6'>
                              <div className='w-full flex items-center gap-6'>
                                 <div key={item.id}
-                                className='w-1/5'>
+                                className='w-full md:w-1/5'>
                                 <img 
                                 src={item.image}
-                                className='w-full h-44 object-contain' 
+                                className='w-52 h-64 object-contain' 
                                 alt='ProductsImgs'
                                 />
                                 </div>
-                                <div className='w-1/5'>
+                                <div className='w-full md:w-1/5'>
                                     <h2 className='font-semibold text-lg'>{item.title}</h2>
                                     <p className='text-sm'>{item.description.substring(0,100)}</p>
                                     <p className='text-base'>Unit Price
@@ -89,10 +89,10 @@ const Cart = () => {
                     hover:bg-red-700 active:bg-red-900 duration-300'>Clear Cart</button>
                 </div>
             </div>
-            <div className='w-full h-52 bg-white col-span-1 flex flex-col 
-            items-center p-4'>
+            <div className='w-full h-52 bg-white col-span-4 md:col-span-1 flex flex-col 
+            items-center p-2'>
                 <div>
-                    <p className='flex gap-2 items-start text-sm'>
+                    <p className='w-full flex gap-2 items-start text-sm'>
                         <span>
                             <CheckCircleIcon className='bg-white text-green-500 rounded-full'/>
                         </span>{" "}
@@ -106,7 +106,7 @@ const Cart = () => {
                 <button className='w-full font-medium text-base bg-gradient-to-tr 
               from-yellow-400 to yellow-500 border hover:from-yellow-300 hover:to-yellow-600
               active:from-yellow-400 active:to-yellow-500 duration-200 py-1.5 rounded-md
-              mt-3'>Proceed to Pay</button>
+              mt-4'>Proceed to Pay</button>
             </div>
         </div>
         ) : (

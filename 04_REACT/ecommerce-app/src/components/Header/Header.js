@@ -90,7 +90,7 @@ const Header = () => {
             </div>
           )}
           <input
-            className="h-full text-base text-amazon_blue flex-grow outline-none border-none py-2"
+            className="w-full h-full text-base text-amazon_blue flex-grow outline-none border-none py-2"
             type="text"
           />
           <span className="w-12 h-full flex items-center justify-center bg-amazon_yellow hover:bg-[#f3a847] duration-300 text-amazon_blue cursor-pointer rounded-tr-md rounded-br-md">
@@ -141,6 +141,7 @@ const Header = () => {
             </p>
           </div>
         </Link>
+        {/* Logout start here */}
         {userInfo && (
           <div
             onClick={handleLogout}

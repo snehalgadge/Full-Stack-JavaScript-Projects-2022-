@@ -30,7 +30,7 @@ const Products = () => {
               src={item.image}
               alt="ProductImg"
             />
-            <ul className="w-full h-36 bg-gray-100 absolute -bottom-[168px] group-hover:bottom-2 duration-700 flex flex-col items-end justify-center gap-2 px-2 border-1 border-r">
+            <ul className="w-full h-40 bg-gray-100 absolute -bottom-[178px] group-hover:bottom-0 duration-700 flex flex-col items-end justify-center gap-2 px-2 border-1 border-r">
               <li className="productli">
                 Compare{' '}
                 <span>
