@@ -53,15 +53,15 @@ const HeaderBottom = () => {
             >
               <div className="w-full bg-amazon_light text-white py-2 px-0 flex items-center gap-4">
                 <AccountCircleIcon />
-                userInfo ? (
-                <h3 className="font-titleFont font-bold text-lg tracking-wide">
-                  {userInfo.userName}
-                </h3>
+                {userInfo ? (
+                <p className="text-xs mdl:text-sm text-white font-light">
+                {userInfo.userName}
+                </p>
                 ) : (
-                <h3 className="font-titleFont font-bold text-lg tracking-wide">
-                  Hello, Sign in
-                </h3>
-                )
+                <p className="text-sm mdl:text-xs text-white font-light">
+                Hello, sign in
+                </p>
+                )}
               </div>
               <SideNavContent
                 title="Digittal Content & Devices"
